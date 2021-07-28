@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 //to use mongodb
 const mongoose = require('mongoose');
 // mongodb+srv://admin:<password>@g-tag-930.l1iqv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-
+//test1
 //from the atlas mongodb
 const db = 'mongodb+srv://idan:koko1234@g-tag-930.l1iqv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 
