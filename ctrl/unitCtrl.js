@@ -98,6 +98,7 @@ async function handleConfiguration(unit, scanData) {
         if (config.sendAlertsFromServer.enabled) {
             if (config.alertMethods.email.enabled) {
                 if (scanData.voltage < config.lowBat.value) {
+                    console.log("111111");
                     sendAlert(unit, `Battery level is too low (${scanData.voltage}V)`);
                     sendEmail("lowBat", `Battery level is too low (${scanData.voltage}V)`, this.config.alertMethods.email.email)
                     return;
@@ -109,6 +110,7 @@ async function handleConfiguration(unit, scanData) {
         if (config.sendAlertsFromServer.enabled) {
             if (config.alertMethods.email.enabled) {
                 if (scanData.cpuTemp < config.max.value && scanData.cpuTemp < config.min.value) {
+                    console.log("123123");
                     sendAlert(unit, `cpuTemp level is too low (${scanData.cpuTemp}V)`);
                     sendEmail("lowBat", `cpuTemp level is too low (${scanData.voltage}V)`, this.config.alertMethods.email.email)
                     return;
