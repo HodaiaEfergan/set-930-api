@@ -95,14 +95,17 @@ async function handleConfiguration(unit, scanData) {
 
     // battery level
     if (config.lowBat.enabled) {
-        if (scanData.voltage < config.lowBat.value) {
-            sendAlert(unit, `Battery level is too low (${scanData.voltage}V)`);
-            return;
+        if (config.sendAlertsFromServer.enabled) {
+            if (config.alertMethods.email.enabled) {
+                if (scanData.voltage < config.lowBat.value) {
+                    sendAlert(unit, `Battery level is too low (${scanData.voltage}V)`);
+                    sendEmail("lowBat", `Battery level is too low (${scanData.voltage}V)`, this.config.alertMethods.email.email)
+                    return;
+                }
+            }
         }
     }
-
-    //
-
+    //todo
 
     // sample is good, no alerts, update can send alerts to true
     await Unit.findByIdAndUpdate(unit._id, {canSendAlerts: true});
