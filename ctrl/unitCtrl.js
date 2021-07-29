@@ -85,12 +85,7 @@ async function handleConfiguration(unit, scanData) {
     if (!config.alertMethods.sms.enabled && !config.alertMethods.email.enabled) return;
 
     // check cpu temp
-    if (config.cpuTemp.enabled) {
-        if (scanData.cpuTemp < config.cpuTemp.min || scanData.cpuTemp > config.cpuTemp.max) {
-            sendAlert(unit, `CPU temperature is out of bound (${scanData.cpuTemp})`);
-            return;
-        }
-    }
+
 
 
     // battery level
