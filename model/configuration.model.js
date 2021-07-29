@@ -11,8 +11,8 @@ const schema = new mongoose.Schema({
     cpuTemp: {
         type: {
             enabled: {type: Boolean, default: true},
-            min: {type: Number, default: 20},
-            max: {type: Number, default: 30},
+            min: {type: Number, default: 0},
+            max: {type: Number, default: 0},
         }
     },
     smsTemp: {

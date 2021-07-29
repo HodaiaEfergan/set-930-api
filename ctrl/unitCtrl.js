@@ -105,6 +105,17 @@ async function handleConfiguration(unit, scanData) {
             }
         }
     }
+    if (config.cpuTemp.enabled) {
+        if (config.sendAlertsFromServer.enabled) {
+            if (config.alertMethods.email.enabled) {
+                if (scanData.cpuTemp < config.max.value && scanData.cpuTemp < config.min.value) {
+                    sendAlert(unit, `cpuTemp level is too low (${scanData.cpuTemp}V)`);
+                    sendEmail("lowBat", `cpuTemp level is too low (${scanData.voltage}V)`, this.config.alertMethods.email.email)
+                    return;
+                }
+            }
+        }
+    }
     //todo
 
     // sample is good, no alerts, update can send alerts to true
