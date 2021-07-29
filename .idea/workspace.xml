@@ -52,7 +52,7 @@
       <updated>1627473227393</updated>
       <workItem from="1627473228434" duration="199000" />
       <workItem from="1627473443436" duration="224000" />
-      <workItem from="1627473678704" duration="6644000" />
+      <workItem from="1627473678704" duration="9159000" />
     </task>
     <task id="LOCAL‎00001" summary="first commit">
       <created>1627473743263</created>
@@ -84,7 +84,13 @@
       <option name="presentableId" value="LOCAL‎00005" />
       <updated>1627550277875</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL‎00006" summary="configuration changes">
+      <created>1627551923763</created>
+      <option name="number" value="LOCAL‎00006" />
+      <option name="presentableId" value="LOCAL‎00006" />
+      <updated>1627551923764</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,10 +102,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="configuration changes" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1627550276777">
+    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1627551921751">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1627550276777" />
+    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1627551921751" />
     <state x="470" y="306" key="Github.ShareDialog" timestamp="1627473524481">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -120,17 +126,27 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1627547094550" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1627550279990">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1627551927083">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1627550279990" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1627551927083" />
     <state x="475" y="264" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1627473715192">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="475" y="264" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.728@0.0.1366.728" timestamp="1627473715192" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1627546380419">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1627554533224">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1627546380419" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1627554533224" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/dist/g-tag-manager/main.bdbb76bf01b907cc1ff6.js</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
