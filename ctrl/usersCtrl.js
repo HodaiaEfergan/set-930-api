@@ -11,21 +11,19 @@ module.exports.login = async (req, res) => {
     try {
         const email = req.body.email;
         const password = req.body.password;
-
+        console.log("1");
         if (!email || !password) return res.status(400).json({
             success: false,
             message: 'please enter username and password'
         });
-
+        console.log("2");
         let user = await User.findOne({email: email, password: password}); //search user with this data
-
+        console.log("3");
         if (!user) return res.status(400).json({success: false, message: 'email or password are incorrect'}); //the name or password is encorrct
         const token = jwt.sign({userId: user._id, email: email}, config.env.JWT_SECRET); //new token
+        console.log("4");
         let answer = user.toObject();
-        if(answer.email=="idan")
-            answer.role=="owner";
-
-
+        console.log(answer.role);
 
         delete answer.password;
         res.json({success: true, data: {token: token, user: answer}});
