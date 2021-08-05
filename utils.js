@@ -1,4 +1,5 @@
 const nodemailer = require("nodemailer");
+
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -21,7 +22,3 @@ transporter.sendMail(mailOptions, function (error, info) {
     }
 });
 
-
-module.exports.sendSMS = async function (message, phone) {
-
-};
