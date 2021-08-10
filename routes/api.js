@@ -9,6 +9,7 @@ const User = require('../model/user.model');
 
 
 // auth
+router.get('/test', usersCtrl.test);
 router.post('/login', usersCtrl.login);
 router.post('/register', usersCtrl.register);
 router.post('/forgot-password', usersCtrl.forgotPassword);

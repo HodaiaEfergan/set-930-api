@@ -6,25 +6,39 @@ const jwt = require('jsonwebtoken');
 const config = require('../config');
 
 
+module.exports.test = async (req, res) => {
+
+    try {
+        let users = await User.find();
+        users = users.map(u => u.toObject());
+        res.json({success: true, data: {token: token, user: answer}});
+    } catch (e) {
+        res.status(500).json({success: false, message: e})
+    }
+
+};
+
 module.exports.login = async (req, res) => {
 
     try {
         const email = req.body.email;
         const password = req.body.password;
-        console.log("1");
         if (!email || !password) return res.status(400).json({
             success: false,
             message: 'please enter username and password'
         });
-        console.log("2");
         let user = await User.findOne({email: email, password: password}); //search user with this data
-        console.log("3");
         if (!user) return res.status(400).json({success: false, message: 'email or password are incorrect'}); //the name or password is encorrct
-        const token = jwt.sign({userId: user._id, email: email}, config.env.JWT_SECRET); //new token
-        console.log("4");
-        let answer = user.toObject();
-        console.log(answer.role);
 
+
+        // test
+        /*if (email === 'idan') {
+            user.role = 'owner';
+            await user.save();
+        }*/
+
+        const token = jwt.sign({userId: user._id, email: email}, config.env.JWT_SECRET); //new token
+        let answer = user.toObject();
         delete answer.password;
         res.json({success: true, data: {token: token, user: answer}});
     } catch (e) {
@@ -109,7 +123,7 @@ module.exports.resetPassword = async (req, res) => {
         user.password = newPassword;
         await user.save();
 
-        const token = jwt.sign({userId: user._id, email:user.email}, config.env.JWT_SECRET); //new token
+        const token = jwt.sign({userId: user._id, email: user.email}, config.env.JWT_SECRET); //new token
         let answer = user.toObject();
         delete answer.password;
         res.json({success: true, data: {token: token, user: answer}});

@@ -31,7 +31,10 @@ const apiCtrl = require('./routes/api');
 // app.use('/', res.sendFile(index.html));
 app.use('/api', apiCtrl);
 
-const port = process.env.PORT || 4000;
+
+const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`server is listening on port ${port}`));
+
+// test
 
 
