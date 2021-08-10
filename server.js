@@ -4,6 +4,10 @@ const app = express();
 const logger = require('morgan');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const net = require('net');
+
+const SOCKET_PORT = 8080;
+
 //to use mongodb
 const mongoose = require('mongoose');
 // mongodb+srv://admin:<password>@g-tag-930.l1iqv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
@@ -32,9 +36,53 @@ const apiCtrl = require('./routes/api');
 app.use('/api', apiCtrl);
 
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`server is listening on port ${port}`));
+const HTTP_PORT = process.env.PORT || 3000;
+app.listen(HTTP_PORT, () => console.log(`http server is listening on port ${HTTP_PORT}`));
 
-// test
+
+/******************       SOCKET SERVER         **********************/
+
+let server = net.createServer(function (socket) {
+    console.log('client connected');
+    // socket.write('Echo server\r\n');
+    socket.pipe(socket);
+
+    socket.on('end', function () {
+        console.log('client disconnected');
+    });
+
+    socket.on('data', function (data) {
+        let str = data.toString();
+        console.log('data came in', str);
+
+        if (str.toLowerCase().startsWith('uid')) {
+            console.log('sample came in');
+            return;
+        }
+
+
+        if (str.toLowerCase() === 'send configuration') {
+            console.log('unit want to check for configuration');
+            socket.emit('new config');
+            return;
+        }
+
+        console.log('invalid data');
+
+    });
+
+    socket.on('error', function (error) {
+        console.error(error);
+
+    });
+
+    socket.on('close', function () {
+        console.info('Socket close');
+    });
+});
+
+server.listen(SOCKET_PORT, () => {
+    console.log('socket server is listening on port ' + SOCKET_PORT);
+});
 
 
