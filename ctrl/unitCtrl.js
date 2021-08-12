@@ -1,7 +1,7 @@
 const Unit = require('../model/unit.model');
 const ScanData = require('../model/scan-data.model');
 const Configuration = require('../model/configuration.model');
-const transporter = require("nodemailer");
+//const transporter = require("nodemailer");
 const twilio = require('twilio');
 const utils = require('../utils');
 
@@ -95,7 +95,7 @@ async function handleConfiguration(unit, scanData) {
             if (config.alertMethods.email.enabled) {
                 if (scanData.voltage < config.lowBat.value) {
                     console.log("111111");
-                    sendAlert(unit, `Battery level is too low (${scanData.voltage}V)`);
+                    //sendAlert(unit, `Battery level is too low (${scanData.voltage}V)`);
                     //sendEmail("lowBat", `Battery level is too low (${scanData.voltage}V)`, this.config.alertMethods.email.email)
                     return;
                 }
@@ -107,7 +107,7 @@ async function handleConfiguration(unit, scanData) {
             if (config.alertMethods.email.enabled) {
                 if (scanData.cpuTemp < config.max.value && scanData.cpuTemp < config.min.value) {
                     console.log("123123");
-                    sendAlert(unit, `cpuTemp level is too low (${scanData.cpuTemp}V)`);
+                    //sendAlert(unit, `cpuTemp level is too low (${scanData.cpuTemp}V)`);
                     //sendEmail("lowBat", `cpuTemp level is too low (${scanData.voltage}V)`, this.config.alertMethods.email.email)
                     return;
                 }
@@ -121,35 +121,35 @@ async function handleConfiguration(unit, scanData) {
 
 
 }
-
-async function sendAlert(unit, message) {
-    if (!unit.canSendAlerts) return; // alert already sent not long ago
-
-    // check if server needs to send alerts at all
-    if (!unit.configuration.sendAlertsFromServer) {
-        return;
-    }
-
-
-    // check if can send email
-    if (unit.configuration.alertMethods.email.enabled) {
-        // now we can sent the email
-        const email = unit.configuration.alertMethods.email.email;
-        //utils.sendEmail(`message from unit ${unit.unitId}`, message, email);
-    }
-
-    // check if can send sms
-    if (unit.configuration.alertMethods.sms.enabled) {
-        // now we can sent the sms
-        const number = unit.configuration.alertMethods.sms.number;
-        //utils.sendSMS(`message from unit ${unit.unitId}`, message, number);
-    }
-
-
-    await Unit.findByIdAndUpdate(unit._id, {canSendAlerts: false});
-
-    console.log('sending alert', message);
-}
+//
+// async function sendAlert(unit, message) {
+//     if (!unit.canSendAlerts) return; // alert already sent not long ago
+//
+//     // check if server needs to send alerts at all
+//     if (!unit.configuration.sendAlertsFromServer) {
+//         return;
+//     }
+//
+//
+//     // check if can send email
+//     if (unit.configuration.alertMethods.email.enabled) {
+//         // now we can sent the email
+//         const email = unit.configuration.alertMethods.email.email;
+//         //utils.sendEmail(`message from unit ${unit.unitId}`, message, email);
+//     }
+//
+//     // check if can send sms
+//     if (unit.configuration.alertMethods.sms.enabled) {
+//         // now we can sent the sms
+//         const number = unit.configuration.alertMethods.sms.number;
+//         //utils.sendSMS(`message from unit ${unit.unitId}`, message, number);
+//     }
+//
+//
+//     await Unit.findByIdAndUpdate(unit._id, {canSendAlerts: false});
+//
+//     console.log('sending alert', message);
+// }
 
 module.exports.relateUnits = async (req, res) => {
     try {

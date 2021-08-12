@@ -1,5 +1,5 @@
 const Configuration = require('../model/configuration.model');
-const nodemailer = require('nodemailer');
+//const nodemailer = require('nodemailer');
 
 module.exports.createOne = async (req, res) => {
 console.log("hi")
