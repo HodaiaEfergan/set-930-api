@@ -28,7 +28,7 @@ app.use(cors());
 app.use(bodyParser.json({limit: '50mb'})); // for parsing application/json
 app.use(bodyParser.urlencoded({extended: true, limit: '50mb'})); // for parsing
 
-
+app.use('/', express.static(path.join(__dirname, 'dist')))
 // load controller
 const apiCtrl = require('./routes/api');
 
