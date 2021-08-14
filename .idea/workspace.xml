@@ -6,19 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f23d2338-9266-4b8f-945e-fce9d23b96b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctrl/configCtrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl/configCtrl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctrl/unitCtrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl/unitCtrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctrl/usersCtrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl/usersCtrl.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>role</find>
-      <find>User.cr</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -182,7 +175,19 @@
       <option name="project" value="LOCAL" />
       <updated>1628595502363</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL‎00018" summary="test">
+      <created>1628770391714</created>
+      <option name="number" value="LOCAL‎00018" />
+      <option name="presentableId" value="LOCAL‎00018" />
+      <updated>1628770391714</updated>
+    </task>
+    <task id="LOCAL‎00019" summary="no nodemailer">
+      <created>1628770768382</created>
+      <option name="number" value="LOCAL‎00019" />
+      <option name="presentableId" value="LOCAL‎00019" />
+      <updated>1628770768383</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,13 +198,15 @@
     <MESSAGE value="configuration changes" />
     <MESSAGE value="user idan" />
     <MESSAGE value="switch to linode test" />
-    <option name="LAST_COMMIT_MESSAGE" value="switch to linode test" />
+    <MESSAGE value="test" />
+    <MESSAGE value="no nodemailer" />
+    <option name="LAST_COMMIT_MESSAGE" value="no nodemailer" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1628191458035">
+    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1628770766046">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1628191458035" />
+    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1628770766046" />
     <state x="470" y="306" key="Github.ShareDialog" timestamp="1627473524481">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -220,18 +227,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1627547094550" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1628191485421">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1628770770044">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1628191485421" />
-    <state x="475" y="264" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1627473715192">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1628770770044" />
+    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1628964800323">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="475" y="264" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.728@0.0.1366.728" timestamp="1627473715192" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1628770219332">
+    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1628964800323" />
+    <state x="475" y="264" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1628770422019">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1628770219332" />
+    <state x="475" y="264" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.728@0.0.1366.728" timestamp="1628770422019" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1628964711342">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1628964711342" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

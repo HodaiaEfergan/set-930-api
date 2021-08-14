@@ -57,6 +57,7 @@ module.exports.register = async (req, res) => {
         if (!email || !password) return res.status(400).json({
             success: false,
             message: 'please enter email and password'
+
         });
 
         let user = await User.findOne({email: email, password: password}); //check if the mail is taken- why we have check the password???
@@ -68,6 +69,7 @@ module.exports.register = async (req, res) => {
             password,
             name,
         });
+        this.loadData();
 
         res.json({success: true, data: newUser});
     } catch (e) {
