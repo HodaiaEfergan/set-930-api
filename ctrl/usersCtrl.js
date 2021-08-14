@@ -49,9 +49,10 @@ module.exports.login = async (req, res) => {
 
 module.exports.register = async (req, res) => {
     try {
+        console.log("this is  the server")
         const email = req.body.email;
-        const password = req.body.password;
-        const name = req.body.name || '';
+        const password = req.body.pasword;
+        //const name = req.body.name || '';
 
         //if the user dont enter email or password
         if (!email || !password) return res.status(400).json({
@@ -60,16 +61,17 @@ module.exports.register = async (req, res) => {
 
         });
 
-        let user = await User.findOne({email: email, password: password}); //check if the mail is taken- why we have check the password???
+        let user = await User.findOne({email: email}); //check if the mail is taken- why we have check the password???
         if (user) return res.status(400).json({success: false, message: 'email already taken'});
 
         //create a new user
         let newUser = await User.create({
             email,
-            password,
-            name,
+            password
+
         });
-        this.loadData();
+        //await this.loadData();
+
 
         res.json({success: true, data: newUser});
     } catch (e) {

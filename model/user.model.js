@@ -3,10 +3,10 @@ const mongoose = require('mongoose');
 const schema = new mongoose.Schema({
     role: {type: String, enum: ['user', 'manager', 'owner'], default: 'user'},
     email: {type: String, unique: [true, 'email already exists'], required: true},
-    name: {type: String},
+    name: {type: String,default: ''},
     password: {type: String, required: true},
     isLocked: {type: Boolean, default: false},
-    forgotPasswordToken: {type: String},
+    forgotPasswordToken: {type: String, default: ''},
 
 }, {timestamps: true});
 

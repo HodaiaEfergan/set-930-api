@@ -36,7 +36,7 @@ const apiCtrl = require('./routes/api');
 app.use('/api', apiCtrl);
 
 
-const HTTP_PORT = process.env.PORT || 3000;
+const HTTP_PORT = process.env.PORT || 3001;
 app.listen(HTTP_PORT, () => console.log(`http server is listening on port ${HTTP_PORT}`));
 
 
