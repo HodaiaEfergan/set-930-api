@@ -49,7 +49,7 @@ module.exports.login = async (req, res) => {
 
 module.exports.register = async (req, res) => {
     try {
-        console.log("this is  the server")
+        console.log("this is the server")
         const email = req.body.email;
         const password = req.body.pasword;
         //const name = req.body.name || '';
