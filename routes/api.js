@@ -54,6 +54,7 @@ router.get('/users/:id', usersCtrl.getOneUser); //route for get all users - for 
 router.put('/users/:id', usersCtrl.editUser); //route for get all users - for the admin
 router.post('/units', usersCtrl.addUnit); // route for should not be in use
 router.post('/attach-unit', usersCtrl.attachUnit); // route for attach one specific unit for the user
+router.post('/register', usersCtrl.register);
 
 // units
 router.put('/units/relate', unitCtrl.relateUnits); //route for delete one specific unit

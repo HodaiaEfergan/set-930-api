@@ -6,7 +6,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const net = require('net');
 
-const SOCKET_PORT = 8080;
+const SOCKET_PORT = 9090;
 
 //to use mongodb
 const mongoose = require('mongoose');
@@ -28,7 +28,7 @@ app.use(cors());
 app.use(bodyParser.json({limit: '50mb'})); // for parsing application/json
 app.use(bodyParser.urlencoded({extended: true, limit: '50mb'})); // for parsing
 
-app.use('/', express.static(path.join(__dirname, 'dist')))
+
 // load controller
 const apiCtrl = require('./routes/api');
 
