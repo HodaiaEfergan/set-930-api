@@ -42,7 +42,7 @@ app.listen(HTTP_PORT, () => console.log(`http server is listening on port ${HTTP
 
 /******************       SOCKET SERVER         **********************/
 
-let server = net.createServer(function (socket) {
+/**********let server = net.createServer(function (socket) {
     console.log('client connected');
     // socket.write('Echo server\r\n');
     socket.pipe(socket);
@@ -83,6 +83,6 @@ let server = net.createServer(function (socket) {
 
 server.listen(SOCKET_PORT, () => {
     console.log('socket server is listening on port ' + SOCKET_PORT);
-});
+}); ***********/
 
 

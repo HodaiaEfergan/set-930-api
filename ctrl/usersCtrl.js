@@ -71,11 +71,12 @@ module.exports.register = async (req, res) => {
             password
 
         });
-        console.log("its work!!!!!!!!");
+        console.log(newUser);
 
 
         res.json({success: true, data: newUser});
     } catch (e) {
+        console.log("bamba");
         res.status(500).json({success: false, message: e})
     }
 };
