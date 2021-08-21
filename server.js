@@ -7,6 +7,8 @@ const bodyParser = require('body-parser');
 const net = require('net');
 
 const SOCKET_PORT = 9090;
+const API_PORT = process.env.PORT || 80;
+
 
 //to use mongodb
 const mongoose = require('mongoose');
@@ -32,12 +34,12 @@ app.use(bodyParser.urlencoded({extended: true, limit: '50mb'})); // for parsing
 // load controller
 const apiCtrl = require('./routes/api');
 
+
 // app.use('/', res.sendFile(index.html));
 app.use('/api', apiCtrl);
 
 
-const HTTP_PORT = process.env.PORT ||80;
-app.listen(HTTP_PORT, () => console.log(`http server is listening on port ${HTTP_PORT}`));
+app.listen(API_PORT, () => console.log(`http server is listening on port ${API_PORT}`));
 
 
 /******************       SOCKET SERVER         **********************/
@@ -84,5 +86,8 @@ let server = net.createServer(function (socket) {
 server.listen(SOCKET_PORT, () => {
     console.log('socket server is listening on port ' + SOCKET_PORT);
 });
+
+
+app.use('/', express.static('./public/g-tag-manager'));
 
 

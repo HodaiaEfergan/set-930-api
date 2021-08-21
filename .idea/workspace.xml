@@ -6,15 +6,65 @@
   <component name="ChangeListManager">
     <list default="true" id="f23d2338-9266-4b8f-945e-fce9d23b96b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/g-tag-manager/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/g-tag-manager/3rdpartylicenses.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/g-tag-manager/assets/g-tag-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/g-tag-manager/assets/g-tag-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/g-tag-manager/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/g-tag-manager/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/g-tag-manager/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/g-tag-manager/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/g-tag-manager/main.bdbb76bf01b907cc1ff6.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/g-tag-manager/main.fb275d33e22cce2146e6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/g-tag-manager/polyfills.807c48cc014ab0be6389.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/g-tag-manager/polyfills.807c48cc014ab0be6389.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/g-tag-manager/runtime.acf0dec4155e77772545.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/g-tag-manager/runtime.acf0dec4155e77772545.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/g-tag-manager/scripts.eca974f4447ec675bec6.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/g-tag-manager/scripts.eca974f4447ec675bec6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/g-tag-manager/styles.506af0fe3e263d45af17.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/g-tag-manager/styles.506af0fe3e263d45af17.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/g-tag-manager/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>role</find>
+      <find>User.cr</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/routes/api.js" />
+        <option value="$PROJECT_DIR$/ctrl/usersCtrl.js" />
+        <option value="$PROJECT_DIR$/server.js" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
@@ -22,7 +72,44 @@
     <option name="height" value="942" />
   </component>
   <component name="ProjectId" id="1vwVdiYp8HhFOGPGc92TPYgZ5ws" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="set930" type="b2602c69:ProjectViewProjectNode" />
+              <item name="set930" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="set930" type="b2602c69:ProjectViewProjectNode" />
+              <item name="set930" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="set930" type="b2602c69:ProjectViewProjectNode" />
+              <item name="set930" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="g-tag-manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="set930" type="b2602c69:ProjectViewProjectNode" />
+              <item name="set930" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,7 +118,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/g-tag-manager" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -40,24 +127,37 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="ts.external.directory.path" value="C:\‏‏תיקיה חדשה\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Node.js.usersCtrl.js">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/g-tag-manager" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
     <configuration name="server.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/server.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
-    <configuration name="usersCtrl.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/ctrl/usersCtrl.js" working-dir="$PROJECT_DIR$/ctrl">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.usersCtrl.js" />
         <item itemvalue="Node.js.server.js" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -75,10 +175,8 @@
       <workItem from="1628400942747" duration="1191000" />
       <workItem from="1628539780261" duration="1638000" />
       <workItem from="1628541601445" duration="2055000" />
-      <workItem from="1628595390864" duration="703000" />
-      <workItem from="1628981189034" duration="4630000" />
-      <workItem from="1629019692106" duration="5476000" />
-      <workItem from="1629191379224" duration="7500000" />
+      <workItem from="1628595390864" duration="1701000" />
+      <workItem from="1629581362423" duration="801000" />
     </task>
     <task id="LOCAL‎00001" summary="first commit">
       <created>1627473743263</created>
@@ -183,162 +281,91 @@
       <option name="project" value="LOCAL" />
       <updated>1628595502363</updated>
     </task>
-    <task id="LOCAL‎00018" summary="test">
-      <created>1628770391714</created>
-      <option name="number" value="LOCAL‎00018" />
-      <option name="presentableId" value="LOCAL‎00018" />
-      <updated>1628770391714</updated>
+    <task id="LOCAL-00018" summary="merge two servers togather">
+      <created>1628596311006</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1628596311006</updated>
     </task>
-    <task id="LOCAL‎00019" summary="no nodemailer">
-      <created>1628770768382</created>
-      <option name="number" value="LOCAL‎00019" />
-      <option name="presentableId" value="LOCAL‎00019" />
-      <updated>1628770768383</updated>
-    </task>
-    <task id="LOCAL‎00020" summary="load data">
-      <created>1628964910766</created>
-      <option name="number" value="LOCAL‎00020" />
-      <option name="presentableId" value="LOCAL‎00020" />
-      <updated>1628964910767</updated>
-    </task>
-    <task id="LOCAL‎00021" summary="load data">
-      <created>1628974510477</created>
-      <option name="number" value="LOCAL‎00021" />
-      <option name="presentableId" value="LOCAL‎00021" />
-      <updated>1628974510479</updated>
-    </task>
-    <task id="LOCAL‎00022" summary="load data">
-      <created>1628979457275</created>
-      <option name="number" value="LOCAL‎00022" />
-      <option name="presentableId" value="LOCAL‎00022" />
-      <updated>1628979457279</updated>
-    </task>
-    <task id="LOCAL‎00023" summary="try solve heroku not get">
-      <created>1628980157679</created>
-      <option name="number" value="LOCAL‎00023" />
-      <option name="presentableId" value="LOCAL‎00023" />
-      <updated>1628980157680</updated>
-    </task>
-    <task id="LOCAL‎00024" summary="work">
-      <created>1629061535991</created>
-      <option name="number" value="LOCAL‎00024" />
-      <option name="presentableId" value="LOCAL‎00024" />
-      <updated>1629061535992</updated>
-    </task>
-    <task id="LOCAL‎00025" summary="2 servers">
-      <created>1629367188844</created>
-      <option name="number" value="LOCAL‎00025" />
-      <option name="presentableId" value="LOCAL‎00025" />
-      <updated>1629367188844</updated>
-    </task>
-    <option name="localTasksCounter" value="26" />
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6195000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="942" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19349006" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5521398" visible="true" weight="0.31529412" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.23529412" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4996986" weight="0.22941177" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.44786015" side_tool="true" visible="true" weight="0.31529412" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4996986" weight="0.14470588" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="configuration changes" />
     <MESSAGE value="user idan" />
     <MESSAGE value="switch to linode test" />
-    <MESSAGE value="test" />
-    <MESSAGE value="no nodemailer" />
-    <MESSAGE value="load data" />
-    <MESSAGE value="try solve heroku not get" />
-    <MESSAGE value="work" />
-    <MESSAGE value="2 servers" />
-    <option name="LAST_COMMIT_MESSAGE" value="2 servers" />
+    <MESSAGE value="merge two servers togather" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge two servers togather" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1629367187335">
+    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1628191458035">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1629367187335" />
+    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1628191458035" />
     <state x="470" y="306" key="Github.ShareDialog" timestamp="1627473524481">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="470" y="306" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1627473524481" />
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1629019086924">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1627547094550">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1629019086924" />
-    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1629019086923">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1627547094550" />
+    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1627547094550">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1629019086923" />
-    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1629019086921">
+    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1627547094550" />
+    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1627547094550">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1629019086921" />
-    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1629019086923">
+    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1627547094550" />
+    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1627547094550">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1629019086923" />
-    <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1628985695139">
+    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1627547094550" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1628191485421">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1628985695139" />
-    <state width="1345" height="223" key="GridCell.Tab.1.center" timestamp="1628985695139">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1628191485421" />
+    <state x="475" y="264" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1627473715192">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1628985695139" />
-    <state width="1345" height="223" key="GridCell.Tab.1.left" timestamp="1628985695139">
+    <state x="475" y="264" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.728@0.0.1366.728" timestamp="1627473715192" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1628192366354">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1628985695139" />
-    <state width="1345" height="223" key="GridCell.Tab.1.right" timestamp="1628985695139">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1628985695139" />
-    <state width="1345" height="223" key="GridCell.Tab.2.bottom" timestamp="1628985695140">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="223" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1628985695140" />
-    <state width="1345" height="223" key="GridCell.Tab.2.center" timestamp="1628985695140">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="223" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1628985695140" />
-    <state width="1345" height="223" key="GridCell.Tab.2.left" timestamp="1628985695139">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="223" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1628985695139" />
-    <state width="1345" height="223" key="GridCell.Tab.2.right" timestamp="1628985695140">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="223" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1628985695140" />
-    <state width="1345" height="223" key="GridCell.Tab.3.bottom" timestamp="1628985695140">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="223" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1628985695140" />
-    <state width="1345" height="223" key="GridCell.Tab.3.center" timestamp="1628985695140">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="223" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1628985695140" />
-    <state width="1345" height="223" key="GridCell.Tab.3.left" timestamp="1628985695140">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="223" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1628985695140" />
-    <state width="1345" height="223" key="GridCell.Tab.3.right" timestamp="1628985695140">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="223" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1628985695140" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1629367191078">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1629367191078" />
-    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1628964800323">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1628964800323" />
-    <state x="475" y="264" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1629367309729">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="475" y="264" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.728@0.0.1366.728" timestamp="1629367309729" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1628978461564">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1628978461564" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1628192366354" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -349,5 +376,52 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/model/user.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ctrl/usersCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/g-tag-manager/polyfills.807c48cc014ab0be6389.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/g-tag-manager/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
