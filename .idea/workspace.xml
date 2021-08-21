@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f23d2338-9266-4b8f-945e-fce9d23b96b2" name="Default Changelist" comment="work">
+    <list default="true" id="f23d2338-9266-4b8f-945e-fce9d23b96b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctrl/usersCtrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl/usersCtrl.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +78,7 @@
       <workItem from="1628595390864" duration="703000" />
       <workItem from="1628981189034" duration="4630000" />
       <workItem from="1629019692106" duration="5476000" />
-      <workItem from="1629191379224" duration="5961000" />
+      <workItem from="1629191379224" duration="7500000" />
     </task>
     <task id="LOCAL‎00001" summary="first commit">
       <created>1627473743263</created>
@@ -226,7 +225,13 @@
       <option name="presentableId" value="LOCAL‎00024" />
       <updated>1629061535992</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL‎00025" summary="2 servers">
+      <created>1629367188844</created>
+      <option name="number" value="LOCAL‎00025" />
+      <option name="presentableId" value="LOCAL‎00025" />
+      <updated>1629367188844</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,13 +247,14 @@
     <MESSAGE value="load data" />
     <MESSAGE value="try solve heroku not get" />
     <MESSAGE value="work" />
-    <option name="LAST_COMMIT_MESSAGE" value="work" />
+    <MESSAGE value="2 servers" />
+    <option name="LAST_COMMIT_MESSAGE" value="2 servers" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1629061866400">
+    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1629367187335">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1629061866400" />
+    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1629367187335" />
     <state x="470" y="306" key="Github.ShareDialog" timestamp="1627473524481">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -317,18 +323,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="223" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1628985695140" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1629061547480">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1629367191078">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1629061547480" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1629367191078" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1628964800323">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1628964800323" />
-    <state x="475" y="264" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1628979435975">
+    <state x="475" y="264" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1629367309729">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="475" y="264" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.728@0.0.1366.728" timestamp="1628979435974" />
+    <state x="475" y="264" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.728@0.0.1366.728" timestamp="1629367309729" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1628978461564">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
