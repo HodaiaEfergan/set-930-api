@@ -4,6 +4,8 @@ const Configuration = require('../model/configuration.model');
 //const transporter = require("nodemailer");
 const twilio = require('twilio');
 const utils = require('../utils');
+const requestIp = require('request-ip');
+const lookup = require('geoip-lite');
 
 
 module.exports.deleteData = async (req, res) => {
@@ -23,6 +25,10 @@ module.exports.sample = async (req, res) => {
     try {
         let data = req.query.data;
         console.log(data);
+
+        const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+        console.log(ip);
+        console.log(lookup(ip));
 
         //UBAT4220MVOLINDExt_ONURSSI21,9
         // NETCON"Partner"MCUTMPTPM40.00EXTTMPTPS31.65LOC$GPGGA,114625.715,
