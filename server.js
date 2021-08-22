@@ -11,7 +11,7 @@ const fs = require('fs');
 
 
 const SOCKET_PORT = 9090;
-const API_PORT = process.env.PORT || 3001;
+const API_PORT = process.env.PORT || 443;
 
 
 // HTTPS
