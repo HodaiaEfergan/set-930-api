@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const net = require('net');
 
 const SOCKET_PORT = 9090;
-const API_PORT = process.env.PORT || 80;
+const API_PORT = process.env.PORT || 3001;
 
 
 //to use mongodb

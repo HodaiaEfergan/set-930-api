@@ -6,15 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f23d2338-9266-4b8f-945e-fce9d23b96b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/g-tag-manager/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/g-tag-manager/3rdpartylicenses.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/g-tag-manager/assets/g-tag-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/g-tag-manager/assets/g-tag-logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/g-tag-manager/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/g-tag-manager/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/g-tag-manager/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/g-tag-manager/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/g-tag-manager/main.bdbb76bf01b907cc1ff6.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/g-tag-manager/main.fb275d33e22cce2146e6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/g-tag-manager/polyfills.807c48cc014ab0be6389.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/g-tag-manager/polyfills.807c48cc014ab0be6389.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/g-tag-manager/runtime.acf0dec4155e77772545.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/g-tag-manager/runtime.acf0dec4155e77772545.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/g-tag-manager/scripts.eca974f4447ec675bec6.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/g-tag-manager/scripts.eca974f4447ec675bec6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/g-tag-manager/styles.506af0fe3e263d45af17.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/g-tag-manager/styles.506af0fe3e263d45af17.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,20 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/g-tag-manager/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="106">
+              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -176,7 +158,7 @@
       <workItem from="1628539780261" duration="1638000" />
       <workItem from="1628541601445" duration="2055000" />
       <workItem from="1628595390864" duration="1701000" />
-      <workItem from="1629581362423" duration="801000" />
+      <workItem from="1629581362423" duration="4808000" />
     </task>
     <task id="LOCAL‎00001" summary="first commit">
       <created>1627473743263</created>
@@ -288,11 +270,18 @@
       <option name="project" value="LOCAL" />
       <updated>1628596311006</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="merge 3 projects together">
+      <created>1629582423944</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1629582423944</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6195000" />
+    <option name="totallyTimeSpent" value="10202000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="942" extended-state="0" />
@@ -304,14 +293,14 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5521398" visible="true" weight="0.31529412" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.23529412" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5521398" weight="0.22352941" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.5864979" visible="true" weight="0.23529412" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4996986" weight="0.22941177" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.44786015" side_tool="true" visible="true" weight="0.31529412" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.4135021" side_tool="true" visible="true" weight="0.23529412" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4996986" weight="0.14470588" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -327,7 +316,8 @@
     <MESSAGE value="user idan" />
     <MESSAGE value="switch to linode test" />
     <MESSAGE value="merge two servers togather" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge two servers togather" />
+    <MESSAGE value="merge 3 projects together" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge 3 projects together" />
   </component>
   <component name="WindowStateProjectService">
     <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1628191458035">
@@ -406,13 +396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/g-tag-manager/polyfills.807c48cc014ab0be6389.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -420,6 +403,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
         </state>
       </provider>
     </entry>
