@@ -25,9 +25,9 @@ module.exports.sample = async (req, res) => {
         let data = req.query.data;
         console.log(data);
 
-        const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+        /*const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
         console.log(ip);
-        console.log(lookup(ip));
+        console.log(lookup(ip));*/
 
         //UBAT4220MVOLINDExt_ONURSSI21,9
         // NETCON"Partner"MCUTMPTPM40.00EXTTMPTPS31.65LOC$GPGGA,114625.715,
