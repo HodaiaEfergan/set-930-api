@@ -88,9 +88,9 @@ async function handleConfiguration(unit, scanData) {
     // check cpu temp
 
 
-
     // battery level
     if (config.lowBat.enabled) {
+        if (!config.sendAlertsFromServer) return;
         if (config.sendAlertsFromServer.enabled) {
             if (config.alertMethods.email.enabled) {
                 if (scanData.voltage < config.lowBat.value) {
@@ -103,6 +103,7 @@ async function handleConfiguration(unit, scanData) {
         }
     }
     if (config.cpuTemp.enabled) {
+        if (!config.sendAlertsFromServer) return;
         if (config.sendAlertsFromServer.enabled) {
             if (config.alertMethods.email.enabled) {
                 if (scanData.cpuTemp < config.max.value && scanData.cpuTemp < config.min.value) {
@@ -121,6 +122,7 @@ async function handleConfiguration(unit, scanData) {
 
 
 }
+
 //
 // async function sendAlert(unit, message) {
 //     if (!unit.canSendAlerts) return; // alert already sent not long ago
