@@ -4,7 +4,6 @@ const Configuration = require('../model/configuration.model');
 //const transporter = require("nodemailer");
 const twilio = require('twilio');
 const utils = require('../utils');
-const requestIp = require('request-ip');
 const lookup = require('geoip-lite');
 
 
