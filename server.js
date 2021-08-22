@@ -4,24 +4,23 @@ const app = express();
 const logger = require('morgan');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const net = require('net');
+// const net = require('net');
 
-const https = require('https');
-const fs = require('fs');
+// const https = require('https');
+// const fs = require('fs');
 
 
 const SOCKET_PORT = 9090;
-const API_PORT = process.env.PORT || 444;
+const API_PORT = process.env.PORT || 3000;
 
 
 // HTTPS
-let key = fs.readFileSync(__dirname + '/certs/selfsigned.key');
+/*let key = fs.readFileSync(__dirname + '/certs/selfsigned.key');
 let cert = fs.readFileSync(__dirname + '/certs/selfsigned.crt');
 let options = {
     key: key,
     cert: cert
-};
-
+};*/
 
 
 //to use mongodb
@@ -52,15 +51,14 @@ const apiCtrl = require('./routes/api');
 // app.use('/', res.sendFile(index.html));
 app.use('/api', apiCtrl);
 
-let server = https.createServer(options, app);
-
-server.listen(API_PORT, () => console.log(`http server is listening on port ${API_PORT}`));
-// app.listen(API_PORT, () => console.log(`http server is listening on port ${API_PORT}`));
+// let server = https.createServer(options, app);
+// server.listen(API_PORT, () => console.log(`http server is listening on port ${API_PORT}`));
+app.listen(API_PORT, () => console.log(`http server is listening on port ${API_PORT}`));
 
 
 /******************       SOCKET SERVER         **********************/
 
-let socketServer = net.createServer(function (socket) {
+/*let socketServer = net.createServer(function (socket) {
     console.log('client connected');
     // socket.write('Echo server\r\n');
     socket.pipe(socket);
@@ -101,7 +99,7 @@ let socketServer = net.createServer(function (socket) {
 
 socketServer.listen(SOCKET_PORT, () => {
     console.log('socket server is listening on port ' + SOCKET_PORT);
-});
+});*/
 
 
 // app.use('/', express.static('./public/g-tag-manager'));
