@@ -55,17 +55,15 @@ module.exports.sendEmail = async function  sendEmail(mail,message) {
         "SendId": "mysendid",
         "IsAsync": false,
         "EmailSendData": {
-        "FromEmail": "hodaiaefergan@gmail.com",
-            "FromName": "testforrafi",
+        "FromEmail": "hodaia.h@8tec.co.il",
+            "FromName": "8tec",
             "Subject": [
-            "בדיקה עבור רפי "
+            message
         ],
-            "HTML": [
-            "HTML1"
-        ],
+
             "languageCode": 1,
             "ToEmails": [
-            "hodaia.h@8tec.co.il"
+            mail
 
 
         ],

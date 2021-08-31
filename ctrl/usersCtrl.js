@@ -92,6 +92,7 @@ module.exports.forgotPassword = async (req, res) => {
         });
 
         let user = await User.findOne({email: email});
+
         if (!user) return res.status(400).json({success: false, message: 'email was not found'});
 
         // generate forgot password token
@@ -104,6 +105,7 @@ module.exports.forgotPassword = async (req, res) => {
         const url = serverUrl + page;
 
         // todo send by email
+        utils.sendEmail(user.email,"click here to reset your password "+url);
 
         res.json({success: true, data: url});
     } catch (e) {
