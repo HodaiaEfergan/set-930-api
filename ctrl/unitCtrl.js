@@ -91,11 +91,11 @@ async function handleConfiguration(unit, scanData) {
     // check cpu temp
 
 
-    // battery level
-    if (config.lowBat.enabled) {
+    // cpu temp- we want alert when its bigger than the max or less than the min
+    if (config.cpuTemp.enabled) {
         if (!config.sendAlertsFromServer) return;
         if (config.sendAlertsFromServer.enabled) {
-            if (scanData.voltage < config.lowBat.value) {
+            if (scanData.cpuTemp > config.cpuTemp.max||scanData.cpuTemp < config.cpuTemp.min) {
                 if (config.alertMethods.email.enabled) {
                     console.log("111111");
                     utils.sendEmail(config.alertMethods.email.email,"your voltage battery is low");
