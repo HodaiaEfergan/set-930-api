@@ -1,5 +1,6 @@
 const Configuration = require('../model/configuration.model');
 //const nodemailer = require('nodemailer');
+const axios = require('axios').default
 
 module.exports.createOne = async (req, res) => {
 console.log("hi")
@@ -49,6 +50,8 @@ module.exports.editOne = async (req, res) => {
         res.status(500).json({success: false, message: e})
     }
 };
+
+
 
 
 

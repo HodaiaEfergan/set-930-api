@@ -4,6 +4,7 @@ const app = express();
 const logger = require('morgan');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const mailgun = require("mailgun-js");
 // const net = require('net');
 
 // const https = require('https');
@@ -13,7 +14,10 @@ const bodyParser = require('body-parser');
 const SOCKET_PORT = 9090;
 const API_PORT = process.env.PORT || 3000;
 
+const utils = require('./utils')
 
+//utils.sendSMS("0524289665","hi");
+utils.sendEmail("hodaiaefergan@gmail.com","hi")
 // HTTPS
 /*let key = fs.readFileSync(__dirname + '/certs/selfsigned.key');
 let cert = fs.readFileSync(__dirname + '/certs/selfsigned.crt');

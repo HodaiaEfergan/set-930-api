@@ -1,0 +1,17 @@
+{
+  "SendId": "sendidtest",
+  "IsAsync": false,
+  "SMSSendData": {
+    "FromNumber": "Pulseemtest",
+    "ToNumberList": [
+      "0524289665"
+    ],
+    "ReferenceList": [
+      "10"
+    ],
+    "TextList": [
+      "this is sms test"
+    ],
+    "IsAutomaticUnsubscribeLink": false
+  }
+}
