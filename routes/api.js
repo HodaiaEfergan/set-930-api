@@ -15,7 +15,6 @@ router.post('/register', usersCtrl.register);
 router.post('/forgot-password', usersCtrl.forgotPassword);
 router.post('/reset-password', usersCtrl.resetPassword);
 router.get('/sample', unitCtrl.sample);
-router.get('/u-config', unitCtrl.getConfig);
 
 
 // user must be authenticated (secure routes)
