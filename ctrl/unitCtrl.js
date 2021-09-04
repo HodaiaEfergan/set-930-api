@@ -44,6 +44,7 @@ module.exports.sample = async (req, res) => {
             }
             return res.json({success: true, data: unit.configuration});
         } catch (e) {
+            console.error('error in get config', e);
             return res.status(500).json({success: false, message: e})
         }
 
