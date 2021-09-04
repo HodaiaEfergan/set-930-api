@@ -17,7 +17,7 @@ const API_PORT = process.env.PORT || 3000;
 const utils = require('./utils')
 
 //utils.sendSMS("0524289665","hi");
-utils.sendEmail("hodaiaefergan@gmail.com","hi")
+//utils.sendEmail("hodaiaefergan@gmail.com","hi")
 // HTTPS
 /*let key = fs.readFileSync(__dirname + '/certs/selfsigned.key');
 let cert = fs.readFileSync(__dirname + '/certs/selfsigned.crt');
@@ -59,52 +59,5 @@ app.use('/api', apiCtrl);
 app.listen(API_PORT, () => console.log(`http server is listening on port ${API_PORT}`));
 
 
-/******************       SOCKET SERVER         **********************/
-
-/*let socketServer = net.createServer(function (socket) {
-    console.log('client connected');
-    // socket.write('Echo server\r\n');
-    socket.pipe(socket);
-
-    socket.on('end', function () {
-        console.log('client disconnected');
-    });
-
-    socket.on('data', function (data) {
-        let str = data.toString();
-        console.log('data came in', str);
-
-        if (str.toLowerCase().startsWith('uid')) {
-            console.log('sample came in');
-            return;
-        }
-
-
-        if (str.toLowerCase() === 'send configuration') {
-            console.log('unit want to check for configuration');
-            socket.emit('new config');
-            return;
-        }
-
-        console.log('invalid data');
-
-    });
-
-    socket.on('error', function (error) {
-        console.error(error);
-
-    });
-
-    socket.on('close', function () {
-        console.info('Socket close');
-    });
-});
-
-socketServer.listen(SOCKET_PORT, () => {
-    console.log('socket server is listening on port ' + SOCKET_PORT);
-});*/
-
-
-// app.use('/', express.static('./public/g-tag-manager'));
 
 

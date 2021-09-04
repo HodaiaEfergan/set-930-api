@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
 const schema = new mongoose.Schema({
-
     name: {type: String, required: true},
     sms: {type: Boolean, default: false},
     call: {type: Boolean, default: false},

@@ -4,6 +4,7 @@ const ScanData = require('../model/scan-data.model');
 
 const jwt = require('jsonwebtoken');
 const config = require('../config');
+const utils = require("../utils");
 
 
 module.exports.test = async (req, res) => {
@@ -105,7 +106,7 @@ module.exports.forgotPassword = async (req, res) => {
         const url = serverUrl + page;
 
         // todo send by email
-        utils.sendEmail(user.email,"click here to reset your password "+url);
+        await utils.sendEmail(user.email, "click here to reset your password " + url);
 
         res.json({success: true, data: url});
     } catch (e) {
