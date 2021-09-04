@@ -1,8 +1,6 @@
 const Unit = require('../model/unit.model');
 const ScanData = require('../model/scan-data.model');
 const Configuration = require('../model/configuration.model');
-//const transporter = require("nodemailer");
-const twilio = require('twilio');
 const lookup = require('geoip-lite');
 
 

@@ -4,7 +4,6 @@ const app = express();
 const logger = require('morgan');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const mailgun = require("mailgun-js");
 // const net = require('net');
 
 // const https = require('https');
