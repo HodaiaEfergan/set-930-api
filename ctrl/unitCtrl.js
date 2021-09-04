@@ -22,7 +22,7 @@ module.exports.getConfig = async (req, res) => {
 
 module.exports.deleteData = async (req, res) => {
 
-    try {
+    try { //test
         await Unit.remove();
         await ScanData.remove();
         res.json({success: true});
