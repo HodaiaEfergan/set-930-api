@@ -5,20 +5,6 @@ const Configuration = require('../model/configuration.model');
 const twilio = require('twilio');
 const lookup = require('geoip-lite');
 
-module.exports.getConfig = async (req, res) => {
-
-    try {
-        let uid = req.query.uid;
-        let unit = await Unit.findOne({unitId: uid}).populate('configuration');
-        if (!unit) {
-            return res.status(404).json({success: false, message: 'unit was not found'})
-        }
-        res.json({success: true, data: unit.configuration});
-    } catch (e) {
-        res.status(500).json({success: false, message: e})
-    }
-
-};
 
 module.exports.deleteData = async (req, res) => {
 
@@ -125,15 +111,15 @@ async function handleConfiguration(unit, scanData) {
     if (config.cpuTemp.enabled) {
         if (!config.sendAlertsFromServer) return;
         if (config.sendAlertsFromServer.enabled) {
-            if (scanData.cpuTemp > config.cpuTemp.max||scanData.cpuTemp < config.cpuTemp.min) {
+            if (scanData.cpuTemp > config.cpuTemp.max || scanData.cpuTemp < config.cpuTemp.min) {
                 if (config.alertMethods.email.enabled) {
                     console.log("111111");
-                    utils.sendEmail(config.alertMethods.email.email,"your voltage battery is low");
+                    utils.sendEmail(config.alertMethods.email.email, "your voltage battery is low");
                     return;
                 }
                 if (config.alertMethods.sms.enabled) {
                     console.log("111111");
-                    utils.sendSMS(config.alertMethods.sms.number,"your voltage battery is low");
+                    utils.sendSMS(config.alertMethods.sms.number, "your voltage battery is low");
                     return;
                 }
 
@@ -146,7 +132,7 @@ async function handleConfiguration(unit, scanData) {
             if (config.alertMethods.email.enabled) {
                 if (scanData.cpuTemp < config.max.value && scanData.cpuTemp < config.min.value) {
                     console.log("123123");
-                    utils.sendSMS(config.alertMethods.sms.phone,"ask hezi what to send!");
+                    utils.sendSMS(config.alertMethods.sms.phone, "ask hezi what to send!");
                     //sendAlert(unit, `cpuTemp level is too low (${scanData.cpuTemp}V)`);
                     //sendEmail("lowBat", `cpuTemp level is too low (${scanData.voltage}V)`, this.config.alertMethods.email.email)
                     return;
