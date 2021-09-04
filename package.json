@@ -7,6 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
   },
+  "engines": {
+    "node": "8.1.1",
+    "npm": "5.0.3"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
