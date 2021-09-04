@@ -18,27 +18,25 @@ module.exports.deleteData = async (req, res) => {
 
 };
 
+module.exports.getConfig = async (req, res) => {
+
+    try {
+        let uid = req.query.uid;
+        let unit = await Unit.findOne({unitId: uid}).populate('configuration');
+        if (!unit) {
+            return res.status(404).json({success: false, message: 'unit was not found'})
+        }
+        res.json({success: true, data: unit.configuration});
+    } catch (e) {
+        res.status(500).json({success: false, message: e})
+    }
+
+};
 
 module.exports.sample = async (req, res) => {
 
-    if (req.query.uid) {
-        try {
-            let uid = req.query.uid;
-            let unit = await Unit.findOne({unitId: uid}).populate('configuration');
-            if (!unit) {
-                return res.status(404).json({success: false, message: 'unit was not found'})
-            }
-            return res.json({success: true, data: unit.configuration});
-        } catch (e) {
-            console.error('error in get config', e);
-            return res.status(500).json({success: false, message: e})
-        }
-
-    }
 
     try {
-
-
         let data = req.query.data;
         console.log(data);
 
