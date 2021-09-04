@@ -104,9 +104,11 @@ module.exports.forgotPassword = async (req, res) => {
         const serverUrl = 'http://localhost:4200/';
         const page = 'forgot-password?token=' + token;
         const url = serverUrl + page;
+        console.log("1");
 
         // todo send by email
         await utils.sendEmail(user.email, "click here to reset your password " + url);
+        console.log("2");
 
         res.json({success: true, data: url});
     } catch (e) {
