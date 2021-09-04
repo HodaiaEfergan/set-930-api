@@ -84,6 +84,7 @@ module.exports.register = async (req, res) => {
 
 module.exports.forgotPassword = async (req, res) => {
     try {
+        console.log("0");
         const email = req.body.email;
 
         //if the user dont enter email
