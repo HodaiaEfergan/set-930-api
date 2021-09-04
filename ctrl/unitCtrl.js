@@ -35,7 +35,23 @@ module.exports.getConfig = async (req, res) => {
 
 module.exports.sample = async (req, res) => {
 
+    if (req.query.uid) {
+        try {
+            let uid = req.query.uid;
+            let unit = await Unit.findOne({unitId: uid}).populate('configuration');
+            if (!unit) {
+                return res.status(404).json({success: false, message: 'unit was not found'})
+            }
+            return res.json({success: true, data: unit.configuration});
+        } catch (e) {
+            return res.status(500).json({success: false, message: e})
+        }
+
+    }
+
     try {
+
+
         let data = req.query.data;
         console.log(data);
 
