@@ -5,6 +5,21 @@ const Configuration = require('../model/configuration.model');
 const twilio = require('twilio');
 const lookup = require('geoip-lite');
 
+module.exports.getConfig = async (req, res) => {
+
+    try {
+        let uid = req.query.uid;
+        let unit = await Unit.findOne({unitId: uid}).populate('configuration');
+        if (!unit) {
+            return res.status(404).json({success: false, message: 'unit was not found'})
+        }
+        res.json({success: true, data: unit.configuration});
+    } catch (e) {
+        res.status(500).json({success: false, message: e})
+    }
+
+};
+
 module.exports.deleteData = async (req, res) => {
 
     try {
