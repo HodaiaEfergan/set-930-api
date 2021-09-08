@@ -28,6 +28,14 @@ const schema = new mongoose.Schema({
             value: {type: Number, default: 20},
         }
     },
+    wifiConnection: {
+        type:{
+            enabled: {type: Boolean, default: false},
+            name: {type:String , default: ''},
+            password: {type:String , default: ''}
+
+        }
+    },
 
     alertMethods: {
         type: {
