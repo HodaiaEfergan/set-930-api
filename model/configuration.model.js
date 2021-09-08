@@ -31,8 +31,8 @@ const schema = new mongoose.Schema({
     wifiConnection: {
         type:{
             enabled: {type: Boolean, default: false},
-            name: {type:String},
-            password: {type:String}
+            name: {type:String , default: ''},
+            password: {type:String , default: ''}
 
         }
     },
