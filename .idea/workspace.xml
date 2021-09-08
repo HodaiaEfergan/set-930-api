@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f23d2338-9266-4b8f-945e-fce9d23b96b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctrl/unitCtrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl/unitCtrl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/configuration.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/configuration.model.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +81,7 @@
       <workItem from="1628541601445" duration="2055000" />
       <workItem from="1628595390864" duration="1701000" />
       <workItem from="1629581362423" duration="12190000" />
-      <workItem from="1630226501850" duration="25636000" />
+      <workItem from="1630226501850" duration="28352000" />
     </task>
     <task id="LOCAL‎00001" summary="first commit">
       <created>1627473743263</created>
@@ -314,7 +313,13 @@
       <option name="presentableId" value="LOCAL‎00036" />
       <updated>1630781716565</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL‎00037" summary="getconfig">
+      <created>1630789491004</created>
+      <option name="number" value="LOCAL‎00037" />
+      <option name="presentableId" value="LOCAL‎00037" />
+      <updated>1630789491009</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,13 +344,14 @@
     <MESSAGE value="fix" />
     <MESSAGE value="fix2" />
     <MESSAGE value="sms+mail" />
-    <option name="LAST_COMMIT_MESSAGE" value="sms+mail" />
+    <MESSAGE value="getconfig" />
+    <option name="LAST_COMMIT_MESSAGE" value="getconfig" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1630781715514">
+    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1630789489392">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1630781715514" />
+    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1630789489392" />
     <state x="470" y="306" key="Github.ShareDialog" timestamp="1627473524481">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -414,10 +420,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="630" height="223" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1630316597761" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1630781718289">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1630789492910">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1630781718289" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1630789492910" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1630228345229">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
