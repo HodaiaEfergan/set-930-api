@@ -1,9 +1,20 @@
 const Unit = require('../model/unit.model');
 const ScanData = require('../model/scan-data.model');
 const Configuration = require('../model/configuration.model');
-//const transporter = require("nodemailer");
-const twilio = require('twilio');
 const lookup = require('geoip-lite');
+
+
+module.exports.deleteData = async (req, res) => {
+
+    try { //test
+        await Unit.remove();
+        await ScanData.remove();
+        res.json({success: true});
+    } catch (e) {
+        res.status(500).json({success: false, message: e})
+    }
+
+};
 
 module.exports.getConfig = async (req, res) => {
 
@@ -20,19 +31,8 @@ module.exports.getConfig = async (req, res) => {
 
 };
 
-module.exports.deleteData = async (req, res) => {
-
-    try {
-        await Unit.remove();
-        await ScanData.remove();
-        res.json({success: true});
-    } catch (e) {
-        res.status(500).json({success: false, message: e})
-    }
-
-};
-
 module.exports.sample = async (req, res) => {
+
 
     try {
         let data = req.query.data;
@@ -110,15 +110,15 @@ async function handleConfiguration(unit, scanData) {
     if (config.cpuTemp.enabled) {
         if (!config.sendAlertsFromServer) return;
         if (config.sendAlertsFromServer.enabled) {
-            if (scanData.cpuTemp > config.cpuTemp.max||scanData.cpuTemp < config.cpuTemp.min) {
+            if (scanData.cpuTemp > config.cpuTemp.max || scanData.cpuTemp < config.cpuTemp.min) {
                 if (config.alertMethods.email.enabled) {
                     console.log("111111");
-                    utils.sendEmail(config.alertMethods.email.email,"your voltage battery is low");
+                    utils.sendEmail(config.alertMethods.email.email, "your voltage battery is low");
                     return;
                 }
                 if (config.alertMethods.sms.enabled) {
                     console.log("111111");
-                    utils.sendSMS(config.alertMethods.sms.number,"your voltage battery is low");
+                    utils.sendSMS(config.alertMethods.sms.number, "your voltage battery is low");
                     return;
                 }
 
@@ -131,7 +131,7 @@ async function handleConfiguration(unit, scanData) {
             if (config.alertMethods.email.enabled) {
                 if (scanData.cpuTemp < config.max.value && scanData.cpuTemp < config.min.value) {
                     console.log("123123");
-                    utils.sendSMS(config.alertMethods.sms.phone,"ask hezi what to send!");
+                    utils.sendSMS(config.alertMethods.sms.phone, "ask hezi what to send!");
                     //sendAlert(unit, `cpuTemp level is too low (${scanData.cpuTemp}V)`);
                     //sendEmail("lowBat", `cpuTemp level is too low (${scanData.voltage}V)`, this.config.alertMethods.email.email)
                     return;

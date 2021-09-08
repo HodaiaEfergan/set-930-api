@@ -6,19 +6,103 @@
   <component name="ChangeListManager">
     <list default="true" id="f23d2338-9266-4b8f-945e-fce9d23b96b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/model/configuration.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/configuration.model.js" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/ctrl/unitCtrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl/unitCtrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+>>>>>>> origin/master
     </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ctrl/unitCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/api.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getConfig</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/routes/api.js" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/ctrl/unitCtrl.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="942" />
   </component>
   <component name="ProjectId" id="1vwVdiYp8HhFOGPGc92TPYgZ5ws" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="set-930-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="set-930-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="set-930-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="set-930-api" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -47,6 +131,18 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="Node.js.server.js">
     <configuration name="server.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/server.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
@@ -61,7 +157,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -81,6 +177,7 @@
       <workItem from="1628541601445" duration="2055000" />
       <workItem from="1628595390864" duration="1701000" />
       <workItem from="1629581362423" duration="12190000" />
+<<<<<<< HEAD
       <workItem from="1630226501850" duration="28352000" />
     </task>
     <task id="LOCAL‎00001" summary="first commit">
@@ -94,6 +191,10 @@
       <option name="number" value="LOCAL‎00002" />
       <option name="presentableId" value="LOCAL‎00002" />
       <updated>1627473849282</updated>
+=======
+      <workItem from="1630226501850" duration="22357000" />
+      <workItem from="1630789431853" duration="4543000" />
+>>>>>>> origin/master
     </task>
     <task id="LOCAL‎00003" summary="configuration changes">
       <created>1627547145578</created>
@@ -307,12 +408,91 @@
       <option name="presentableId" value="LOCAL‎00035" />
       <updated>1630781641527</updated>
     </task>
-    <task id="LOCAL‎00036" summary="sms+mail">
-      <created>1630781716565</created>
-      <option name="number" value="LOCAL‎00036" />
-      <option name="presentableId" value="LOCAL‎00036" />
-      <updated>1630781716565</updated>
+    <task id="LOCAL-00036" summary="u-config">
+      <created>1630789589291</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1630789589291</updated>
     </task>
+    <task id="LOCAL-00037" summary="u-config">
+      <created>1630790111361</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1630790111361</updated>
+    </task>
+    <task id="LOCAL-00038" summary="u-config delete one">
+      <created>1630790527471</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1630790527471</updated>
+    </task>
+    <task id="LOCAL-00039" summary="u-config inside sample">
+      <created>1630790752320</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1630790752320</updated>
+    </task>
+    <task id="LOCAL-00040" summary="u-config inside sample2">
+      <created>1630791095735</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1630791095735</updated>
+    </task>
+    <task id="LOCAL-00041" summary="update package json">
+      <created>1630791425208</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1630791425208</updated>
+    </task>
+    <task id="LOCAL-00042" summary="update package json">
+      <created>1630791499112</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1630791499112</updated>
+    </task>
+    <task id="LOCAL-00043" summary="test1">
+      <created>1630792565251</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1630792565251</updated>
+    </task>
+    <task id="LOCAL-00044" summary="test2">
+      <created>1630792702422</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1630792702422</updated>
+    </task>
+    <task id="LOCAL-00045" summary="test3">
+      <created>1630792868599</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1630792868599</updated>
+    </task>
+    <task id="LOCAL-00046" summary="test4">
+      <created>1630792956153</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1630792956153</updated>
+    </task>
+    <task id="LOCAL-00047" summary="test5">
+      <created>1630793113634</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1630793113634</updated>
+    </task>
+<<<<<<< HEAD
     <task id="LOCAL‎00037" summary="getconfig">
       <created>1630789491004</created>
       <option name="number" value="LOCAL‎00037" />
@@ -320,19 +500,70 @@
       <updated>1630789491009</updated>
     </task>
     <option name="localTasksCounter" value="38" />
+=======
+    <task id="LOCAL-00048" summary="test6">
+      <created>1630793354731</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1630793354731</updated>
+    </task>
+    <task id="LOCAL-00049" summary="test7">
+      <created>1630793397780</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1630793397780</updated>
+    </task>
+    <task id="LOCAL-00050" summary="test8">
+      <created>1630793453402</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1630793453403</updated>
+    </task>
+    <task id="LOCAL-00051" summary="test9">
+      <created>1630793656758</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1630793656758</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
+>>>>>>> origin/master
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4543000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="942" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="npm" side_tool="true" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.049411766" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.15294118" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3035294" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first commit" />
-    <MESSAGE value="configuration changes" />
-    <MESSAGE value="user idan" />
-    <MESSAGE value="switch to linode test" />
-    <MESSAGE value="merge two servers togather" />
-    <MESSAGE value="merge 3 projects together" />
-    <MESSAGE value="port 3001" />
     <MESSAGE value="https server" />
     <MESSAGE value="https server fix" />
     <MESSAGE value="https server fix 2" />
@@ -344,6 +575,7 @@
     <MESSAGE value="fix" />
     <MESSAGE value="fix2" />
     <MESSAGE value="sms+mail" />
+<<<<<<< HEAD
     <MESSAGE value="getconfig" />
     <option name="LAST_COMMIT_MESSAGE" value="getconfig" />
   </component>
@@ -352,6 +584,29 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1630789489392" />
+=======
+    <MESSAGE value="u-config" />
+    <MESSAGE value="u-config delete one" />
+    <MESSAGE value="u-config inside sample" />
+    <MESSAGE value="u-config inside sample2" />
+    <MESSAGE value="update package json" />
+    <MESSAGE value="test1" />
+    <MESSAGE value="test2" />
+    <MESSAGE value="test3" />
+    <MESSAGE value="test4" />
+    <MESSAGE value="test5" />
+    <MESSAGE value="test6" />
+    <MESSAGE value="test7" />
+    <MESSAGE value="test8" />
+    <MESSAGE value="test9" />
+    <option name="LAST_COMMIT_MESSAGE" value="test9" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1630781640439">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1630781640439" />
+>>>>>>> origin/master
     <state x="470" y="306" key="Github.ShareDialog" timestamp="1627473524481">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -420,18 +675,25 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="630" height="223" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1630316597761" />
+<<<<<<< HEAD
     <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1630789492910">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1630789492910" />
+=======
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1630781643435">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1630781643435" />
+>>>>>>> origin/master
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1630228345229">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1630228345229" />
-    <state x="475" y="264" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1630789299320">
+    <state x="475" y="264" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1630228330868">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="475" y="264" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.728@0.0.1366.728" timestamp="1630789299320" />
+    <state x="475" y="264" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.728@0.0.1366.728" timestamp="1630228330868" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1628192366354">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -451,5 +713,76 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ctrl/configCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web.config.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.rules.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firebase.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.firebaserc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ctrl/unitCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
