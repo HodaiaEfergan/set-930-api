@@ -50,7 +50,7 @@ const schema = new mongoose.Schema({
                     enabled: {type: Boolean, default: false},
                     email: {type: String, default: ''},
                 }
-            },
+            },//k;
             sendAlertsFromServer: {type: Boolean, default: true},
             sendAlertsFromUnit: {type: Boolean, default: false},
 
