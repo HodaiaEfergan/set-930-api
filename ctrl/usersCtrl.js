@@ -320,7 +320,14 @@ module.exports.deleteUnit = async (req, res) => {
 //get all scans of specific unit
 module.exports.getUnitScans = async (req, res) => {
     // todo - check that the unit belongs to the connected user (unit.user.id == req.user.id)
+    const take = req.query.take || 50;
+    const skip = req.query.skip || 0;
     const unitId = req.params.unitId;
-    res.json(await ScanData.find({unitId: unitId}).sort('-time'));
+    try {
+        res.json(await ScanData.find({unitId: unitId}).skip(parseInt(skip)).limit(parseInt(take)).sort('-time'));
+    }catch (e){
+        console.error(e);
+        res.status(500).json({success: false, message: e})
+    }
 };
 
