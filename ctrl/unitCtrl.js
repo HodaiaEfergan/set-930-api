@@ -2,6 +2,7 @@ const Unit = require('../model/unit.model');
 const ScanData = require('../model/scan-data.model');
 const Configuration = require('../model/configuration.model');
 const lookup = require('geoip-lite');
+const utils = require("../utils");
 
 
 module.exports.deleteData = async (req, res) => {
@@ -110,6 +111,7 @@ async function handleConfiguration(unit, scanData) {
     if (config.cpuTemp.enabled) {
         if (!config.sendAlertsFromServer) return;
         if (config.sendAlertsFromServer.enabled) {
+            //אם זה בין לבין זה בסדר!
             if (scanData.cpuTemp > config.cpuTemp.max || scanData.cpuTemp < config.cpuTemp.min) {
                 if (config.alertMethods.email.enabled) {
                     console.log("111111");
@@ -118,6 +120,7 @@ async function handleConfiguration(unit, scanData) {
                 }
                 if (config.alertMethods.sms.enabled) {
                     console.log("111111");
+
                     utils.sendSMS(config.alertMethods.sms.number, "your voltage battery is low");
                     return;
                 }

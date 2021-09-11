@@ -29,9 +29,8 @@ router.use(async (req, res, next) => {
 //this function have 2 parameters: token and secret(biskvit...)
 //jwt-json web token
 
-    //what the next do?
-    //מה המטרה של פונקציה זו?
-    //למה היא מופיעה כאן?
+
+
     jwt.verify(token, require('../config').env.JWT_SECRET, async (err, data) => {
             if (err) return res.sendStatus(403);
             try {
@@ -46,7 +45,7 @@ router.use(async (req, res, next) => {
         }
     );
 });
-
+//hyg
 
 // users
 router.get('/users', usersCtrl.getUsers); //route for get all users - for the admin
