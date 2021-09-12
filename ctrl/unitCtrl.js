@@ -36,7 +36,7 @@ module.exports.sample = async (req, res) => {
 
 
     try {
-        //utils.sendSms("0524289665" , "your voltage battery is low");
+
         let data = req.query.data;
         console.log(data);
 
@@ -85,15 +85,10 @@ module.exports.sample = async (req, res) => {
 
 
         // handle alerts
-        try{
-            //await utils.sendSMS("0524289665", "hii");
-        }
-        catch (e) {
-            console.log(e);
-        }
+
 
         //utils.sendSMS("0524289665" , "your voltage battery is low");
-        //await handleConfiguration(unit.toObject(), newItem.toObject());
+        await handleConfiguration(unit.toObject(), newItem.toObject());
         res.json({success: true, data: newItem});
 
     } catch (e) {
@@ -111,52 +106,45 @@ async function handleConfiguration(unit, scanData) {
     // load configuration from server
     let config = unit.configuration;
     if (!config.enabled) return;
-    //if (!config.alertMethods.sms.enabled && !config.alertMethods.email.enabled) return;
+    if (!config.alertMethods.sms.enabled && !config.alertMethods.email.enabled) return;
 
     // check cpu temp - config.alertMethods.email.email
-    try{
-        //await utils.sendSMS("0524289665" , "your voltage battery is low");
-    }
-    catch (e) {
-        console.log(e);
 
-    }
 
 
     // cpu temp- we want alert when its bigger than the max or less than the min
-    // if (config.cpuTemp.enabled) {
-    //     if (!config.sendAlertsFromServer) return;
-    //     if (config.sendAlertsFromServer.enabled) {
-    //         //אם זה בין לבין זה בסדר!
-    //         if (scanData.cpuTemp > config.cpuTemp.max || scanData.cpuTemp < config.cpuTemp.min) {
-    //             if (config.alertMethods.email.enabled) {
-    //                 console.log("111111");
-    //                 await utils.sendEmail(config.alertMethods.email.email, "your voltage battery is low");
-    //                 return;
-    //             }
-    //             if (config.alertMethods.sms.enabled) {
-    //                 console.log("111111");
-    //
-    //                 await utils.sendSMS(config.alertMethods.sms.number, "your voltage battery is low");
-    //                 return;
-    //             }
-    //
-    //         }
-    //     }
-    // }
-    // if (config.cpuTemp.enabled) {
-    //     if (!config.sendAlertsFromServer.enabled) return;
-    //     if (config.sendAlertsFromServer.enabled) {
-    //         if (config.alertMethods.email.enabled) {
-    //             if (scanData.cpuTemp < config.max.value && scanData.cpuTemp < config.min.value) {
-    //                 console.log("123123");
-    //                 await utils.sendSMS(config.alertMethods.sms.phone, "ask hezi what to send!");
-    //                 //sendAlert(unit, `cpuTemp level is too low (${scanData.cpuTemp}V)`);
-    //                 //sendEmail("lowBat", `cpuTemp level is too low (${scanData.voltage}V)`, this.config.alertMethods.email.email)
-    //                 return;
-    //             }
-    //         }
-    //     }
+    if (config.cpuTemp.enabled) {
+        if (!config.sendAlertsFromServer) return;
+        if (config.sendAlertsFromServer.enabled) {
+            //אם זה בין לבין זה בסדר!
+            if (scanData.cpuTemp > config.cpuTemp.max || scanData.cpuTemp < config.cpuTemp.min) {
+                if (config.alertMethods.email.enabled) {
+                    console.log("111111");
+                    await utils.sendEmail(config.alertMethods.email.email, "your voltage battery is low");
+                    return;
+                }
+                if (config.alertMethods.sms.enabled) {
+                    console.log("111111");
+
+                    await utils.sendSMS(config.alertMethods.sms.number, "your voltage battery is low");
+                    return;
+                }
+
+            }
+        }
+    }
+    if (config.cpuTemp.enabled) {
+        if (!config.sendAlertsFromServer.enabled) return;
+        if (config.sendAlertsFromServer.enabled) {
+            if (config.alertMethods.email.enabled) {
+                if (scanData.cpuTemp < config.max.value && scanData.cpuTemp < config.min.value) {
+                    console.log("123123");
+                    await utils.sendSMS(config.alertMethods.sms.phone, "ask hezi what to send!");
+
+                    return;
+                }
+            }
+        }
 
     //todo
 
@@ -166,7 +154,7 @@ async function handleConfiguration(unit, scanData) {
 
 
 }
-
+    }
 //
 // async function sendAlert(unit, message) {
 //     if (!unit.canSendAlerts) return; // alert already sent not long ago
