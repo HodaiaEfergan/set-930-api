@@ -36,7 +36,7 @@ module.exports.sample = async (req, res) => {
 
 
     try {
-        utils.sendSms("0524289665" , "your voltage battery is low");
+        //utils.sendSms("0524289665" , "your voltage battery is low");
         let data = req.query.data;
         console.log(data);
 
