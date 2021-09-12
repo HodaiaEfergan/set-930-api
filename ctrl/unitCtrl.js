@@ -105,8 +105,11 @@ async function handleConfiguration(unit, scanData) {
     if (!config.alertMethods.sms.enabled && !config.alertMethods.email.enabled) return;
 
     // check cpu temp
+
+
+    // cpu temp- we want alert when its bigger than the max or less than the min
     if (config.cpuTemp.enabled) {
-        //if (!config.sendAlertsFromServer.enabled) return;
+        if (!config.sendAlertsFromServer) return;
         if (config.sendAlertsFromServer.enabled) {
             //אם זה בין לבין זה בסדר!
             if (scanData.cpuTemp > config.cpuTemp.max || scanData.cpuTemp < config.cpuTemp.min) {
@@ -126,7 +129,7 @@ async function handleConfiguration(unit, scanData) {
         }
     }
     if (config.cpuTemp.enabled) {
-        if (!config.sendAlertsFromServer) return;
+        if (!config.sendAlertsFromServer.enabled) return;
         if (config.sendAlertsFromServer.enabled) {
             if (config.alertMethods.email.enabled) {
                 if (scanData.cpuTemp < config.max.value && scanData.cpuTemp < config.min.value) {
@@ -139,8 +142,7 @@ async function handleConfiguration(unit, scanData) {
             }
         }
     }
-
-
+    //todo
 
     // sample is good, no alerts, update can send alerts to true
     await Unit.findByIdAndUpdate(unit._id, {canSendAlerts: true});
