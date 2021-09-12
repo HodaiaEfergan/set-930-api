@@ -24,7 +24,7 @@ const mailgun = require("mailgun-js");
 //     }
 // });
 //
-module.exports.sendSMS = async function  sendSMS(phone,message){
+module.exports.sendSMS = async function  sendSMS(number,message){
     const apiKey = 'WEDB53wYXpP8llpnm/23Ig==';
     let url = 'http://api.pulseem.com/api/v1/SmsApi/SendSms';
     let body = {
