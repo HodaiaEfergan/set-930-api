@@ -101,8 +101,8 @@ async function handleConfiguration(unit, scanData) {
 
     // load configuration from server
     let config = unit.configuration;
-    if (!config.enabled) return;
-    if (!config.alertMethods.sms.enabled && !config.alertMethods.email.enabled) return;
+    //if (!config.enabled) return;
+    //if (!config.alertMethods.sms.enabled && !config.alertMethods.email.enabled) return;
 
     // check cpu temp - config.alertMethods.email.email
     await utils.sendEmail("hodaiaefergan@gmail.com" , "your voltage battery is low");
