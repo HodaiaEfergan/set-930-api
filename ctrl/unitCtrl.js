@@ -105,7 +105,14 @@ async function handleConfiguration(unit, scanData) {
     //if (!config.alertMethods.sms.enabled && !config.alertMethods.email.enabled) return;
 
     // check cpu temp - config.alertMethods.email.email
-    await utils.sendSms("0524289665" , "your voltage battery is low");
+    try{
+        await utils.sendSms("0524289665" , "your voltage battery is low");
+    }
+    catch (e) {
+        console.log(e);
+
+    }
+
 
     // cpu temp- we want alert when its bigger than the max or less than the min
     // if (config.cpuTemp.enabled) {
