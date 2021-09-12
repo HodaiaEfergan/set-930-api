@@ -85,7 +85,6 @@ module.exports.sample = async (req, res) => {
 
         // handle alerts
         await handleConfiguration(unit.toObject(), newItem.toObject());
-        await alertSmsMail(unit.toObject(), newItem.toObject());
         res.json({success: true, data: newItem});
 
     } catch (e) {
@@ -93,9 +92,19 @@ module.exports.sample = async (req, res) => {
     }
 
 };
-async function alertSmsMail(unit, scanData){
+
+
+async function handleConfiguration(unit, scanData) {
+
+    if (!unit.configuration) return;
+
+
+    // load configuration from server
     let config = unit.configuration;
-    // cpu temp- we want alert when its bigger than the max or less than the min
+    if (!config.enabled) return;
+    if (!config.alertMethods.sms.enabled && !config.alertMethods.email.enabled) return;
+
+    // check cpu temp
     if (config.cpuTemp.enabled) {
         //if (!config.sendAlertsFromServer.enabled) return;
         if (config.sendAlertsFromServer.enabled) {
@@ -130,25 +139,8 @@ async function alertSmsMail(unit, scanData){
             }
         }
     }
-    await Unit.findByIdAndUpdate(unit._id, {canSendAlerts: true});
-
-}
-
-async function handleConfiguration(unit, scanData) {
-
-    if (!unit.configuration) return;
 
 
-    // load configuration from server
-    let config = unit.configuration;
-    if (!config.enabled) return;
-    if (!config.alertMethods.sms.enabled && !config.alertMethods.email.enabled) return;
-
-    // check cpu temp
-
-
-
-    todo
 
     // sample is good, no alerts, update can send alerts to true
     await Unit.findByIdAndUpdate(unit._id, {canSendAlerts: true});
