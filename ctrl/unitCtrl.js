@@ -115,7 +115,7 @@ async function handleConfiguration(unit, scanData) {
 
     // check cpu temp - config.alertMethods.email.email
     try{
-        await utils.sendSms("0524289665" , "your voltage battery is low");
+        await utils.sendSMS("0524289665" , "your voltage battery is low");
     }
     catch (e) {
         console.log(e);

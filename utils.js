@@ -32,7 +32,7 @@ module.exports.sendSMS = async function  sendSMS(number,message){
         "IsAsync": false,
         "SMSSendData": {
             "FromNumber": "set-930",
-            "ToNumberList": [phone],
+            "ToNumberList": [number],
             "ReferenceList": ["10"],
             "TextList": [message],
             "IsAutomaticUnsubscribeLink": false
