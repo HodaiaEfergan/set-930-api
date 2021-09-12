@@ -86,14 +86,14 @@ module.exports.sample = async (req, res) => {
 
         // handle alerts
         try{
-            await utils.sendSMS("0524289665", "hii");
+            //await utils.sendSMS("0524289665", "hii");
         }
         catch (e) {
             console.log(e);
         }
 
         //utils.sendSMS("0524289665" , "your voltage battery is low");
-        await handleConfiguration(unit.toObject(), newItem.toObject());
+        //await handleConfiguration(unit.toObject(), newItem.toObject());
         res.json({success: true, data: newItem});
 
     } catch (e) {
@@ -115,7 +115,7 @@ async function handleConfiguration(unit, scanData) {
 
     // check cpu temp - config.alertMethods.email.email
     try{
-        await utils.sendSMS("0524289665" , "your voltage battery is low");
+        //await utils.sendSMS("0524289665" , "your voltage battery is low");
     }
     catch (e) {
         console.log(e);
