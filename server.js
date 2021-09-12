@@ -15,7 +15,7 @@ const API_PORT = process.env.PORT || 3000;
 
 const utils = require('./utils')
 
-utils.sendSMS("0524289665","hi");
+//utils.sendSMS("0524289665","hi");
 //utils.sendEmail("hodaiaefergan@gmail.com","hi")
 // HTTPS
 /*let key = fs.readFileSync(__dirname + '/certs/selfsigned.key');
