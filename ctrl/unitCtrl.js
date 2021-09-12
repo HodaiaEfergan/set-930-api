@@ -85,7 +85,8 @@ module.exports.sample = async (req, res) => {
 
 
         // handle alerts
-        await utils.sendSMS("0524289665" , "your voltage battery is low");
+
+        utils.sendSMS("0524289665" , "your voltage battery is low");
         await handleConfiguration(unit.toObject(), newItem.toObject());
         res.json({success: true, data: newItem});
 
