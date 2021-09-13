@@ -9,7 +9,7 @@ const schema = new mongoose.Schema({
 
     cpuTemp: {
         type: {
-            enabled: {type: Boolean, default: true},
+            enabled: {type: Boolean, default: false},
             min: {type: Number, default: 0},
             max: {type: Number, default: 0},
         }
