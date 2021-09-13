@@ -120,13 +120,13 @@ async function handleConfiguration(unit, scanData) {
             if (scanData.cpuTemp > config.cpuTemp.max || scanData.cpuTemp < config.cpuTemp.min) {
                 if (config.alertMethods.email.enabled) {
                     console.log("111111");
-                    await utils.sendEmail(config.alertMethods.email.email, "your voltage battery is low");
+                    await utils.sendEmail(config.alertMethods.email.email, "cpu temp");
                     return;
                 }
                 if (config.alertMethods.sms.enabled) {
                     console.log("111111");
 
-                    await utils.sendSMS(config.alertMethods.sms.number, "your voltage battery is low");
+                    await utils.sendSMS(config.alertMethods.sms.number, "cpu temp");
                     return;
                 }
 
@@ -139,7 +139,7 @@ async function handleConfiguration(unit, scanData) {
             if (config.alertMethods.email.enabled) {
                 if (scanData.snsTemp < config.lowBat) {
                     console.log("123123");
-                    await utils.sendSMS(config.alertMethods.sms.number, "your battery is low");
+                    await utils.sendSMS(config.alertMethods.sms.number, "sns temp");
 
                     return;
                 }
