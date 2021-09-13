@@ -30,7 +30,7 @@ const schema = new mongoose.Schema({
     },
     wifiConnection: {
         type:{
-            enabled: {type: Boolean, default: false},
+            enabled: {type: Boolean, default: true},
             name: {type:String , default: ''},
             password: {type:String , default: ''}
 
