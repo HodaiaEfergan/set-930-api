@@ -52,7 +52,7 @@ const schema = new mongoose.Schema({
                 }
             },//k;
             sendAlertsFromServer: {type: Boolean, default: true},
-            sendAlertsFromUnit: {type: Boolean, default: false},
+            sendAlertsFromUnit: {type: Boolean, default: true},
 
         }
     }
