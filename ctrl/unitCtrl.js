@@ -115,7 +115,7 @@ async function handleConfiguration(unit, scanData) {
     // cpu temp- we want alert when its bigger than the max or less than the min
     if (config.cpuTemp.enabled) {
         if (!config.sendAlertsFromServer) return;
-        if (config.sendAlertsFromServer.enabled) {
+        if (config.sendAlertsFromServer) {
             //אם זה בין לבין זה בסדר!
             if (scanData.cpuTemp > config.cpuTemp.max || scanData.cpuTemp < config.cpuTemp.min) {
                 if (config.alertMethods.email.enabled) {

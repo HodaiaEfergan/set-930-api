@@ -9,7 +9,7 @@ const schema = new mongoose.Schema({
 
     cpuTemp: {
         type: {
-            enabled: {type: Boolean, default: false},
+            enabled: {type: Boolean, default: true},
             min: {type: Number, default: 0},
             max: {type: Number, default: 0},
         }
@@ -47,7 +47,7 @@ const schema = new mongoose.Schema({
             },
             email: {
                 type: {
-                    enabled: {type: Boolean, default: false},
+                    enabled: {type: Boolean, default: true},
                     email: {type: String, default: ''},
                 }
             },//k;
