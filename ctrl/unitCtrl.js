@@ -133,13 +133,13 @@ async function handleConfiguration(unit, scanData) {
             }
         }
     }
-    if (config.cpuTemp.enabled) {
+    if (config.snsTemp.enabled) {
         if (!config.sendAlertsFromServer.enabled) return;
         if (config.sendAlertsFromServer.enabled) {
             if (config.alertMethods.email.enabled) {
-                if (scanData.cpuTemp < config.max.value && scanData.cpuTemp < config.min.value) {
+                if (scanData.snsTemp < config.lowBat) {
                     console.log("123123");
-                    await utils.sendSMS(config.alertMethods.sms.phone, "ask hezi what to send!");
+                    await utils.sendSMS(config.alertMethods.sms.number, "your battery is low");
 
                     return;
                 }
