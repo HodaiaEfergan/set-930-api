@@ -7,6 +7,7 @@ const schema = new mongoose.Schema({
     password: {type: String, required: true},
     isLocked: {type: Boolean, default: false},
     forgotPasswordToken: {type: String, default: ''},
+    myUnits:{type:String,default:''}
 
 }, {timestamps: true});
 
