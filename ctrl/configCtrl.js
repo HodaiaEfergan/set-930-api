@@ -26,7 +26,11 @@ module.exports.getOne = async (req, res) => {
 module.exports.getByCreator = async (req, res) => {
     try {
         res.json(await Configuration.find(req.params.creator));
+        console.log(req.params.creator);
+        console.log(req.creator)
     } catch (e) {
+        console.log(req.params.creator);
+        console.log(req.creator)
         res.status(500).json({success: false, message: e})
     }
 };
