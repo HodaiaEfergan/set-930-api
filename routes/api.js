@@ -70,6 +70,7 @@ router.post('/configs/:id/relateUnits', configCtrl.getOne);
 
 router.route('/configs')
     .get(configCtrl.getAll)
+    .get(configCtrl.getByCreator)
     .post(configCtrl.createOne);
 
 router.route('/configs/:id')
