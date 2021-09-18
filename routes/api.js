@@ -72,7 +72,7 @@ router.route('/configs')
     .get(configCtrl.getAll)
     .post(configCtrl.createOne);
 
-router.route('/configs/:creator')
+router.route('/configs/creator')
     .get(configCtrl.getByCreator);
 
 router.route('/configs/:id')
