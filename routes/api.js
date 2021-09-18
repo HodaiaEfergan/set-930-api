@@ -72,11 +72,12 @@ router.route('/configs')
     .get(configCtrl.getAll)
     .post(configCtrl.createOne);
 
+router.route('/configs/creator')
+    .get(configCtrl.getByCreator);
 
 router.route('/configs/:id')
     .get(configCtrl.getOne)
     .delete(configCtrl.deleteOne)
-    .get(configCtrl.getByCreator)
     .put(configCtrl.editOne);
 
 
