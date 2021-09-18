@@ -70,8 +70,10 @@ router.post('/configs/:id/relateUnits', configCtrl.getOne);
 
 router.route('/configs')
     .get(configCtrl.getAll)
-    .get(configCtrl.getByCreator)
     .post(configCtrl.createOne);
+
+router.route('/configs/:creator')
+    .get(configCtrl.getByCreator);
 
 router.route('/configs/:id')
     .get(configCtrl.getOne)
