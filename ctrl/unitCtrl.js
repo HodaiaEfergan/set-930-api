@@ -193,6 +193,19 @@ module.exports.editUnit = async (req, res) => {
     }
 };
 
+module.exports.getUnitsByOwnerName = async (req, res) => {
+    try {
+        res.json(await Unit.find(req.params.user));
+        console.log(req.params.user);
+        console.log(req.user)
+    } catch (e) {
+        console.log(req.params.user);
+        console.log(req.user)
+        res.status(500).json({success: false, message: e})
+    }
+};
+
+
 module.exports.relateUnits = async (req, res) => {
     try {
         const units = req.body.units;

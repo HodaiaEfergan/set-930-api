@@ -35,6 +35,7 @@ module.exports.getByCreator = async (req, res) => {
     }
 };
 
+
 module.exports.getAll = async (req, res) => {
     try {
         res.json(await Configuration.find());
