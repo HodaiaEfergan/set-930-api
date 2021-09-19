@@ -184,6 +184,14 @@ async function handleConfiguration(unit, scanData) {
 //
 //     console.log('sending alert', message);
 // }
+module.exports.editUnit = async (req, res) => {
+    try {
+        let editItem = await Unit.findByIdAndUpdate(req.params.id, req.body);
+        res.json({success: true, data: editItem});
+    } catch (e) {
+        res.status(500).json({success: false, message: e})
+    }
+};
 
 module.exports.relateUnits = async (req, res) => {
     try {

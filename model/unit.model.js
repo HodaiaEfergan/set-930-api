@@ -8,6 +8,7 @@ const schema = new mongoose.Schema({
     user: {type: mongoose.Schema.Types.ObjectId, ref: 'User'},
     configuration: {type: mongoose.Schema.Types.ObjectId, ref: 'Configuration'},
 
+
 }, {timestamps: true});
 
 

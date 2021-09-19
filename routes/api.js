@@ -59,7 +59,8 @@ router.post('/register', usersCtrl.register);
 // units
 router.put('/units/relate', unitCtrl.relateUnits); //route for delete one specific unit
 router.get('/units', usersCtrl.getUnits); //route for get all units- for the admin
-router.get('/units/:unitId', usersCtrl.getUnit); //route for get on specific unit
+router.get('/units/:unitId', usersCtrl.getUnit);//route for get on specific unit
+router.put('/units/:id', unitCtrl.editUnit);
 router.put('/units/:unitId', usersCtrl.updateUnit); //route for update one specific unit
 router.delete('/units/:unitId', usersCtrl.deleteUnit); //route for delete one specific unit
 // router.get('/configs/:id', unitCtrl.SendEmail);

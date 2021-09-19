@@ -6,6 +6,12 @@ const schema = new mongoose.Schema({
     name: {type: String,default: ''},
     password: {type: String, required: true},
     isLocked: {type: Boolean, default: false},
+    isHaveManager: {
+        type: {
+            enabled: {type: Boolean, default: false},
+            name: {type: String, default: ''},
+        }
+    },
     forgotPasswordToken: {type: String, default: ''},
     myUnits:{type:String,default:''}
 
