@@ -111,7 +111,6 @@ async function handleConfiguration(unit, scanData) {
     // check cpu temp - config.alertMethods.email.email
 
 
-
     // cpu temp- we want alert when its bigger than the max or less than the min
     if (config.cpuTemp.enabled) {
         if (!config.sendAlertsFromServer) return;
@@ -146,15 +145,15 @@ async function handleConfiguration(unit, scanData) {
             }
         }
 
-    //todo
+        //todo
 
-    // sample is good, no alerts, update can send alerts to true
-    await Unit.findByIdAndUpdate(unit._id, {canSendAlerts: true});
+        // sample is good, no alerts, update can send alerts to true
+        await Unit.findByIdAndUpdate(unit._id, {canSendAlerts: true});
 
 
-
-}
     }
+}
+
 //
 // async function sendAlert(unit, message) {
 //     if (!unit.canSendAlerts) return; // alert already sent not long ago
@@ -200,7 +199,7 @@ module.exports.getUnitsByOwnerName = async (req, res) => {
         console.log(req.user)
     } catch (e) {
         console.log(req.params.user);
-        console.log(req.user)
+        console.log(req.user);
         res.status(500).json({success: false, message: e})
     }
 };
@@ -219,6 +218,34 @@ module.exports.relateUnits = async (req, res) => {
 
         let updateRes = await Unit.updateMany({_id: {$in: selectedIds}}, {configuration: configId});
         if (removedIds.length > 0) updateRes = await Unit.updateMany({_id: {$in: removedIds}}, {configuration: null});
+        res.json({success: true});
+
+    } catch (e) {
+        res.status(500).json({success: false, message: e})
+    }
+
+};
+
+
+module.exports.relateUnitToUser = async (req, res) => {
+    try {
+        const unitId = req.body.unitId;
+        const userId = req.body.userId;
+        const unrelate = req.body.unrelate || false;
+
+        if ( !unitId || (!userId && !unrelate)) {
+            return res.status(400).json({success: false, message: 'please enter valid data'});
+        }
+
+        const unit = await Unit.findOne({unitId: unitId});
+        if (!unit) {
+            return res.status(400).json({success: false, message: 'unit was not found'});
+        }
+        //  const user = await User.findById(unitId);
+
+        unit.user = userId;
+        await unit.save();
+
         res.json({success: true});
 
     } catch (e) {

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const schema = new mongoose.Schema({
-    name: {type: String, default:Date.now()},
+    name: {type: String, default: Date.now()},
     sms: {type: Boolean, default: false},
     call: {type: Boolean, default: false},
     email: {type: Boolean, default: false},
@@ -31,10 +31,10 @@ const schema = new mongoose.Schema({
         }
     },
     wifiConnection: {
-        type:{
+        type: {
             enabled: {type: Boolean, default: true},
-            name: {type:String , default: ''},
-            password: {type:String , default: ''}
+            name: {type: String, default: ''},
+            password: {type: String, default: ''}
 
         }
     },

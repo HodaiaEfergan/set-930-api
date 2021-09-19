@@ -13,7 +13,7 @@ const bodyParser = require('body-parser');
 const SOCKET_PORT = 9090;
 const API_PORT = process.env.PORT || 3000;
 
-const utils = require('./utils')
+const utils = require('./utils');
 
 //utils.sendSMS("0524289665","hi");
 //utils.sendEmail("hodaiaefergan@gmail.com","hi")

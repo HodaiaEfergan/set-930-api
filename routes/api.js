@@ -30,7 +30,6 @@ router.use(async (req, res, next) => {
 //jwt-json web token
 
 
-
     jwt.verify(token, require('../config').env.JWT_SECRET, async (err, data) => {
             if (err) return res.sendStatus(403);
             try {
@@ -92,6 +91,10 @@ router.route('/scan-data/:id')
     .get(scanDataCtrl.getOne)
     .delete(scanDataCtrl.deleteOne)
     .put(scanDataCtrl.editOne);
+
+
+router.post('/relateUnitToUser', unitCtrl.relateUnitToUser); //route for delete one specific unit
+
 
 // units
 // router.get('/units', usersCtrl.getUnits);
