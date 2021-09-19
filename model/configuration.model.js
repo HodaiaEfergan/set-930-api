@@ -6,8 +6,8 @@ const schema = new mongoose.Schema({
     call: {type: Boolean, default: false},
     email: {type: Boolean, default: false},
     enabled: {type: Boolean, default: true},
-    creator: {type: String, default: ''},
-    isPublic:{type:Boolean, default:false},
+    creator: {type: mongoose.Schema.Types.ObjectId, ref: 'User'},
+
 
     cpuTemp: {
         type: {
