@@ -154,35 +154,7 @@ async function handleConfiguration(unit, scanData) {
     }
 }
 
-//
-// async function sendAlert(unit, message) {
-//     if (!unit.canSendAlerts) return; // alert already sent not long ago
-//
-//     // check if server needs to send alerts at all
-//     if (!unit.configuration.sendAlertsFromServer) {
-//         return;
-//     }
-//
-//
-//     // check if can send email
-//     if (unit.configuration.alertMethods.email.enabled) {
-//         // now we can sent the email
-//         const email = unit.configuration.alertMethods.email.email;
-//         //utils.sendEmail(`message from unit ${unit.unitId}`, message, email);
-//     }
-//
-//     // check if can send sms
-//     if (unit.configuration.alertMethods.sms.enabled) {
-//         // now we can sent the sms
-//         const number = unit.configuration.alertMethods.sms.number;
-//         //utils.sendSMS(`message from unit ${unit.unitId}`, message, number);
-//     }
-//
-//
-//     await Unit.findByIdAndUpdate(unit._id, {canSendAlerts: false});
-//
-//     console.log('sending alert', message);
-// }
+
 module.exports.editUnit = async (req, res) => {
     try {
         let editItem = await Unit.findByIdAndUpdate(req.params.id, req.body);

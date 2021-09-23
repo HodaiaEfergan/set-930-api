@@ -13,7 +13,8 @@ const schema = new mongoose.Schema({
         }
     },
     forgotPasswordToken: {type: String, default: ''},
-    myUnits:{type:String,default:''}
+    myUnits:{type:String,default:''},
+
 
 }, {timestamps: true});
 
