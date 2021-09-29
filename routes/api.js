@@ -6,6 +6,7 @@ const configCtrl = require('../ctrl/configCtrl');
 const unitCtrl = require('../ctrl/unitCtrl');
 const jwt = require('jsonwebtoken');
 const User = require('../model/user.model');
+const companyCtrl = require("../ctrl/company");
 
 
 // auth
@@ -94,7 +95,8 @@ router.route('/scan-data/:id')
 
 
 router.post('/relateUnitToUser', unitCtrl.relateUnitToUser); //route for delete one specific unit
-
+//company
+router.put('/company/:id', companyCtrl.editOneCompany);
 
 // units
 // router.get('/units', usersCtrl.getUnits);

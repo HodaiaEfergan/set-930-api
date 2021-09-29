@@ -14,6 +14,7 @@ const schema = new mongoose.Schema({
     },
     forgotPasswordToken: {type: String, default: ''},
     myUnits:{type:String,default:''},
+    company:{type: mongoose.Schema.Types.ObjectId, ref: 'company'},
 
 
 }, {timestamps: true});

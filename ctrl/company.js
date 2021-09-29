@@ -38,7 +38,7 @@ module.exports.deleteOne = async (req, res) => {
     }
 };
 
-module.exports.editOne = async (req, res) => {
+module.exports.editOneCompany = async (req, res) => {
     try {
         let editItem = await Company.findByIdAndUpdate(req.params.id, req.body);
         res.json({success: true, data: editItem});
