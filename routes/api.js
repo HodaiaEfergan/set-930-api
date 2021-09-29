@@ -97,6 +97,7 @@ router.route('/scan-data/:id')
 router.post('/relateUnitToUser', unitCtrl.relateUnitToUser); //route for delete one specific unit
 //company
 router.put('/company/:id', companyCtrl.editOneCompany);
+router.route('/company').post(companyCtrl.createCompany);
 
 // units
 // router.get('/units', usersCtrl.getUnits);

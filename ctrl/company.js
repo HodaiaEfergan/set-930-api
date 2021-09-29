@@ -1,6 +1,6 @@
 const Company = require('../model/company.model');
 
-module.exports.createOne = async (req, res) => {
+module.exports.createCompany = async (req, res) => {
 
     try {
         let newItem = await Company.create(req.body);
