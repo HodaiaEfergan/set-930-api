@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f23d2338-9266-4b8f-945e-fce9d23b96b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +73,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -95,12 +96,7 @@
       <workItem from="1630226501850" duration="22357000" />
       <workItem from="1630789431853" duration="4885000" />
       <workItem from="1632081685438" duration="2729000" />
-    </task>
-    <task id="LOCAL‎00008" summary="configuration changes">
-      <created>1627557595476</created>
-      <option name="number" value="LOCAL‎00008" />
-      <option name="presentableId" value="LOCAL‎00008" />
-      <updated>1627557595476</updated>
+      <workItem from="1632915990597" duration="1704000" />
     </task>
     <task id="LOCAL‎00009" summary="configuration changes">
       <created>1628189994024</created>
@@ -422,11 +418,17 @@
       <option name="presentableId" value="LOCAL‎00056" />
       <updated>1632912662483</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL‎00057" summary="test11">
+      <created>1632914829335</created>
+      <option name="number" value="LOCAL‎00057" />
+      <option name="presentableId" value="LOCAL‎00057" />
+      <updated>1632914829336</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="https server fix 2" />
@@ -457,10 +459,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="test11" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1632912660932">
+    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1632914828332">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1632912660932" />
+    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1632914828331" />
     <state x="470" y="306" key="Github.ShareDialog" timestamp="1627473524481">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -529,10 +531,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="630" height="223" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1630316597761" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1632912681320">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1632914831306">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1632912681320" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1632914831306" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1632086138527">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

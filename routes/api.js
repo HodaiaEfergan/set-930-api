@@ -98,6 +98,7 @@ router.post('/relateUnitToUser', unitCtrl.relateUnitToUser); //route for delete 
 //company
 router.put('/company/:id', companyCtrl.editOneCompany);
 router.route('/company').post(companyCtrl.createCompany);
+router.route('/company/:id').get(companyCtrl.getOne)
 
 // units
 // router.get('/units', usersCtrl.getUnits);
