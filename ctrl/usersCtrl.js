@@ -315,6 +315,17 @@ module.exports.deleteUnit = async (req, res) => {
         res.status(500).json({success: false, message: e})
     }
 };
+
+module.exports.deleteUser = async (req, res) => {
+    const userId = req.params.unitId;
+    try {
+
+        await User.deleteOne({_id: userId});
+        res.json({success: true, data: 'deleted'});
+    } catch (e) {
+        res.status(500).json({success: false, message: e})
+    }
+};
 //forget password
 
 

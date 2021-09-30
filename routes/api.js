@@ -55,7 +55,7 @@ router.put('/users/:id', usersCtrl.editUser); //route for get all users - for th
 router.post('/units', usersCtrl.addUnit); // route for should not be in use
 router.post('/attach-unit', usersCtrl.attachUnit); // route for attach one specific unit for the user
 router.post('/register', usersCtrl.register);
-
+router.delete('/users/:unitId', usersCtrl.deleteUser);
 // units
 router.put('/units/relate', unitCtrl.relateUnits); //route for delete one specific unit
 router.get('/units', usersCtrl.getUnits);  //route for get all units- for the admin
@@ -99,6 +99,7 @@ router.post('/relateUnitToUser', unitCtrl.relateUnitToUser); //route for delete 
 router.put('/company/:id', companyCtrl.editOneCompany);
 router.route('/company').post(companyCtrl.createCompany);
 router.route('/company/:id').get(companyCtrl.getOne)
+router.route('/company').get(companyCtrl.getAll)
 
 // units
 // router.get('/units', usersCtrl.getUnits);
